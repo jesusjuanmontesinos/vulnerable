@@ -1,0 +1,138 @@
+<div class="widgetPanel" buttonIcon="assets/images/widget/i_samur.png" buttonText="Direcciones" title="Direcciones">
+        <table style="width:100%">
+            <tr>
+                <th style="width:70px; text-align:right" >Tipo de via:</th>
+                <td style="width:200px;" >
+                 <input type="text" style="width:75%;" name="textTiposVia" id="textTiposVia"  title="Tipo de via" dojoType="dijit.form.TextBox" />
+                </td>
+            </tr>
+            <tr>
+                <th style="width:70px;text-align:right" class="rowheader">Calle:</th>
+                <td style="width:200px;">
+                    <input type="text" style="width:75%;" name="textSearch" id="textSearch"  dojoType="dijit.form.TextBox" />
+                </td>
+            </tr>
+             <tr>
+                <th style="width:70px;text-align:right" class="rowheader" >Nº:</th>
+                <td style="width:200px;">
+                    <input type="text" style="width:50%;" name="textNumber" id="textNumber"   dojoType="dijit.form.TextBox" />
+                </td>
+            </tr>
+             <tr>
+                <th style="width:70px;text-align:right" class="rowheader">Calificador:</th>
+                <td style="width:200px;">
+                    <input type="text" style="width:50%;" name="textCalificador" id="textCalificador" dojoType="dijit.form.TextBox" />
+                </td>
+            </tr>
+            <tr>
+            <td colspan="4">
+                 <button id = "btnSearch" name="btnSearch" type="button"  dojoType="dijit.form.Button">Buscar dirección</button>
+                 <button id = "btnBuscarCruces" name="btnBuscarCruces" type="button" dojoType="dijit.form.Button">Buscar cruces</button>
+                 <button id = "btnBorrarBusqueda" name="btnBorrarBusqueda" type="button" dojoType="dijit.form.Button">Borrar búsqueda</button>
+            </td>
+            </tr>
+           
+        </table>
+	<div class="widgetPanel"  buttonIcon="assets/images/widget/i_table.png" buttonText="Resultados">
+		<div id="divResultados" style="width:100%; height:100%">
+                    <div class="rowHeader" style="text-align:left">Candidatos para calle:</div>
+                    <center>
+                        <select id="cboPosiblesCalles"  size="6"  style=" width: 90%; height:200px;  font-size:8pt;" ></select>
+                    </center>
+      </div>    
+     </div> 
+	<div class="widgetPanel"  buttonIcon="assets/images/widget/i_coordenadas.png" buttonText="BuscarCoordenadas">
+		<div id="divBuscarCoordenadas" style="width:100%; height:100%">
+           <table style="width:100%">
+            <tr>
+               <td  colspan="5">Coordendas UTM ED50</td>
+            </tr>
+            <tr>
+                <th style="width:10px" >Coordenada X:</th>
+                <td style="width:100px;">
+                    <input type="text" style="width:90%;" name="textCoordXutmED50" id = "textCoordXutmED50" dojoType="dijit.form.TextBox" />
+                </td>
+                 <th style="width:10px" >Coordenada Y:</th>
+                <td style="width:100px;">
+                    <input type="text" style="width:90%;" name="textCoordYutmED50" id = "textCoordYutmED50" dojoType="dijit.form.TextBox" />
+                </td>
+                <td style="width:50px;"> <button id ="btnBuscarCoordenadasUTMED50" name="btnBuscarCoordenadasUTMED50" type="button" dojoType="dijit.form.Button">Buscar</button></td>
+            </tr>
+            <tr>
+                <td colspan="5" >Coordendas UTM ETRS89</td>
+            </tr>
+            <tr>
+                <th style="width:10px" > Coordenada X:</th>
+                <td style="width:100px;">
+                    <input type="text" style="width:90%" name="textCoordXutmETRS89" id = "textCoordXutmETRS89" dojoType="dijit.form.TextBox" />
+                </td>
+                 <th style="width:10px" >Coordenada Y:</th>
+                <td style="width:100px;">
+                    <input type="text" style="width:90%" name="textCoordYutmETRS89" id = "textCoordYutmETRS89" dojoType="dijit.form.TextBox" />
+                </td>
+                <td style="width:50px;"> <button id="btnBuscarCoordenadasUTMETRS89" name="btnBuscarCoordenadasUTMETRS89" type="button" dojoType="dijit.form.Button">Buscar</button></td>
+            </tr>
+            <tr>
+                <td colspan="5" >Coordendas Geograficas ETRS89  (grados decimales)</td>
+            </tr>
+            <tr>
+                <th style="width:10px" >Longitud</th>
+                <td style="width:100px;">
+                    <input type="text" style="width:90%" name="textCoordLon" id = "textCoordLon" dojoType="dijit.form.TextBox" />
+                </td>
+                 <th style="width:10px" >Latitud</th>
+                <td style="width:100px;">
+                    <input type="text" style="width:90%" name="textCoordLat" id = "textCoordLat" dojoType="dijit.form.TextBox" />
+                </td>
+                <td style="width:50px;"> <button id="btnBuscarCoordenadasGeo" name="btnBuscarCoordenadasGeo" type="button" dojoType="dijit.form.Button">Buscar</button></td>
+            </tr>
+           
+           
+        </table>
+        <table style="width:100%">
+         <tr>
+           <td  colspan="5" >Coordendas Geograficas ETRS89  (grados decimales)</td>
+         </tr>
+         <tr>
+         <th style="width:10px" >Longitud</th>
+                <td style="width:100px;">
+                    <input type="text" value="-3" style="width:80%" name="textCoordLong" id = "textCoordLong" dojoType="dijit.form.TextBox" /><b>o</b>
+                </td>
+                 <td style="width:100px;">
+                    <input type="text" style="width:80%" name="textCoordLonm" id = "textCoordLonm" dojoType="dijit.form.TextBox" /><b>'</b>
+
+                </td>
+                 <td style="width:100px;">
+                    <input type="text" style="width:80%" name="textCoordLons"  id = "textCoordLons" dojoType="dijit.form.TextBox" /><b>''</b>
+
+                </td>
+                 
+            </tr>
+              <tr>
+         <th style="width:10px" >Latitud</th>
+                <td style="width:100px;">
+                    <input type="text" value="40" style="width:80%" name="textCoordLatg" id = "textCoordLatg" dojoType="dijit.form.TextBox" /><b>o</b>
+                </td>
+                 <td style="width:100px;">
+                    <input type="text" style="width:80%" name="textCoordLatm" id = "textCoordLatm" dojoType="dijit.form.TextBox" /><b>'</b>
+
+                </td>
+                 <td style="width:100px;">
+                    <input type="text" style="width:80%" name="textCoordLats" id = "textCoordLats" dojoType="dijit.form.TextBox" /><b>''</b>
+
+                </td>
+                  <td style="width:50px;"> <button name="btnBuscarCoordenadasGeoDecimales" id ="btnBuscarCoordenadasGeoDecimales" type="button" dojoType="dijit.form.Button">Buscar</button></td>
+            </tr>
+            <tr>
+             <td  style="height:15px"  colspan="4">
+                    <center><div id="divMsgCoordenadas" style="color:Red; visibility:hidden"></div></center>
+             </td>
+             </tr>
+        </table>
+		<div id="copybutton">
+			<p>Haga clic sobre un punto del mapa para copiar las coordenadas en formato UTMX / UTMY ED50 Y ETRS89</p>
+			<button name="btnActivarCoordenadas" id ="btnActivarCoordenadas" type="button" dojoType="dijit.form.Button">Activar</button>
+		</div>
+        </div>
+	</div>
+</div>

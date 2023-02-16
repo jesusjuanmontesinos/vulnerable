@@ -1,0 +1,276 @@
+<div style="width:100%; height:100%; min-width:280px;min-width:240px;">
+    <div class="widgetPanel" id="widgetPanel_info" buttonIcon="assets/images/widget/i_mailbox.png">
+        <br/>
+        <p style="font-size:14pt"><b>Clic derecho sobre el mapa, seleccione opción</b></p>
+    </div>
+    <div class="widgetPanel" id="widgetPanel_form" buttonIcon="assets/images/widget/i_mailbox.png" buttonText="Alta" style="display: none;">
+        <br />
+        <table style="width:100%">
+            <tr>
+                <th style="width: 35%;">Tipo vía:</th>
+                <td>
+                    <input class="jimu-input-aux" type="text" name="inputTipoVia" id="inputTipoVia" style="width:80%" />
+                </td>
+            </tr>
+            <tr>
+                <th>Nombre Vía  (*):</th>
+                <td>
+                    <input class="jimu-input-aux" type="text" name="inputNombreVia" id="inputNombreVia" style="width:80%" />
+                   <img style="cursor:hand;" src="widgets/Riesgo/images/buscar.gif" alt="buscar" id="img_consulta" dojoAttachEvent="onclick:ventanaInformacionLupa"/>
+                </td>
+            </tr>
+            <tr>
+                <th>Número Vía:</th>
+                <td>
+                    <input class="jimu-input-aux" type="text" name="inputNumeroVia" id="inputNumeroVia" style="width:80%" />
+                </td>
+            </tr>
+            <tr>
+                <th>Calificador Portal:</th>
+                <td>
+                    <input class="jimu-input-aux" type="text" name="inputCalificador" id="inputCalificador" style="width:80%" />
+                </td>
+            </tr>
+            <tr>
+                <th>UTM X  (*):</th>
+                <td>
+                    <input class="jimu-input-aux" type="text" name="inputUTMX" id="inputUTMX" style="width:80%" />
+                </td>
+            </tr>
+            <tr>
+                <th>UTM Y  (*):</th>
+                <td>
+                    <input class="jimu-input-aux" type="text" name="inputUTMY" id="inputUTMY" style="width:80%" />
+                </td>
+            </tr>
+            <tr>
+                <th>Distrito  (*):</th>
+                <td>
+                    <select class="dijitReset dijitInputInner jimu-input-aux" id="inputDistrito" name="inputDistrito" style="width:80%; float:left"></select>
+                </td>
+            </tr>
+            <tr>
+                <th>Población:</th>
+                <td>
+                    <input class="jimu-input-aux" type="text" name="inputPoblacion" id="inputPoblacion" style="width:80%" />
+                </td>
+            </tr>
+            <tr>
+                <th>Nombre riesgo (*):</th>
+                <td>
+                    <input class="jimu-input-aux" type="text" name="inputNombreRiesgo" id="inputNombreRiesgo" style="width:80%" />
+                </td>
+            </tr>
+            <tr>
+                <th>Localizaciones:</th>
+                <td>
+                    <select class="dijitReset dijitInputInner jimu-input-aux" id="inputLocalizaciones" name="inputLocalizaciones" style="width:80%; float:left"></select>
+                </td>
+            </tr>
+        </table>
+        <br/>
+        <fieldset class="scheduler-border">
+            <legend class="scheduler-border">Categorización</legend>
+            <br/>
+            <fieldset class="scheduler-border">
+                <legend class="scheduler-border">Factor vulnerabilidad</legend>
+                <table style="width:100%">
+                    <tr>
+                        <th style="width: 35%;">Tipo Factor:</th>
+                        <td>
+                            <select class="dijitReset dijitInputInner jimu-input-aux" id="campoTipoFactor" name="campoTipoFactor"></select>
+                        </td>
+                        <td>
+                            <button  id="btAniadirTipoFactor" name="btAniadirTipoFactor" type="button" dojoType="dijit.form.Button">Añadir</button>
+                        </td>
+                    </tr>
+                </table>
+                <hr/>
+                <table style="width:100%" id="myTable_factor">
+                    <tr>
+                        <th><b>Tipo factor</b></th>
+                        <th></th>
+                    </tr>   
+                    <tr></tr>
+                </table>
+            </fieldset>
+            <fieldset class="scheduler-border">
+                <legend class="scheduler-border">Tipologías</legend>
+                <table style="width:100%">
+                    <tr>
+                        <th>Clase:</th>
+                        <td>
+                            <select class="dijitReset dijitInputInner jimu-input-aux" id="inputClase" name="inputClase"></select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th >Categoría:</th>
+                        <td><select class="dijitReset dijitInputInner jimu-input-aux" id="inputCategoria" name="inputCategoria" ></select></td>
+                    </tr>
+                    <tr>
+                        <th >Subcategoría:</th>
+                        <td>
+                            <select class="dijitReset dijitInputInner jimu-input-aux" id="inputSubcategoria" name="inputSubcategoria"></select>
+                        </td>
+                        <td><button id="btAniadir" name="btAniadir" type="button" dojoType="dijit.form.Button">Añadir</button></td>
+                    </tr>
+                </table>
+                <hr/>
+                <table style="width:100%" id="myTable">
+                    <tr>
+                        <th><b>Clase</b></th>
+                        <th><b>Categoría</b></th>
+                        <th><b>Subcategoría</b></th>
+                        <th></th>
+                    </tr>   
+                    <tr></tr>
+                </table>
+            </fieldset>
+        </fieldset>
+        <br/>
+        <fieldset class="scheduler-border">
+            <legend class="scheduler-border">Documentación</legend>
+            <table style="width:100%">
+                <tr>
+                    <th >Tipo documento:</th>
+                    <td><select id="inputTipoDocumento" name="inputTipoDocumento" ></select></td>
+                </tr>
+                <tr>
+                    <th >Documento:</th>
+                    <td>
+                        <input type="text" name="inputDocumento" id="inputDocumento" style="width:80%" />
+                        <button id="btAniadirDocumentoVulnerable" name="btAniadirDocumentoVulnerable" type="button" dojoType="dijit.form.Button">Añadir</button>
+                    </td>
+                </tr>
+            </table>
+            <hr/>
+            <table style="width:100%" id="myTable_documentacion">
+                <tr>
+                    <th><b>Tipos documentos</b></th>
+                    <th><b>Documentos</b></th>
+                </tr>   
+            </table>
+        </fieldset>
+        <br>
+        <table style="width:100%">
+            <tr>
+                <th style="width: 35%;">Teléfono contacto:</th>
+                <td>
+                    <input class="jimu-input-aux" type="text" name="inputTelefonoContacto" id="inputTelefonoContacto" style="width:80%" />
+                </td>
+            </tr>
+            <tr>
+                <th>Fecha inicio:</th>
+                <td>
+                    <input class="jimu-input-aux" type="date" name="inputFechaInicio" id="inputFechaInicio" style="width:50%" />
+                    <input class="jimu-input-aux"type="time" name="inputHoraInicio" id="inputHoraInicio" style="width:30%" />
+                </td>
+            </tr>
+
+            <tr>
+                <th >Fecha fin:</th>
+                <td>
+                    <input class="jimu-input-aux" type="date" name="inputFechaFin" id="inputFechaFin" style="width:50%" value=""/>
+                    <input class="jimu-input-aux" type="time" name="inputHoraFin" id="inputHoraFin" style="width:30%" value=""/>
+                </td>
+            </tr>
+            <tr>
+                <th >Aforo:</th>
+                <td>
+                    <input class="jimu-input-aux" type="text" name="inputAforo" id="inputAforo" style="width:80%" />
+                </td>
+            </tr>
+            <tr>
+                <th >NDP Relacionado:</th>
+                <td>
+                    <input class="jimu-input-aux" type="text" name="inputNDPRelacionado" id="inputNDPRelacionado" style="width:80%" />
+                </td>
+            </tr>
+            <tr>
+                <th >Observaciones:</th>
+                <td>
+                    <textarea class="jimu-input-aux" rows="3" style="resize: none;" id="textarea_descripcion"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <button id="btAlta" name="btAlta" type="button" style=" width:70px"dojoType="dijit.form.Button">Alta</button>
+                    <button id="btCerrarAlta" name="btCerrarAlta" type="button" style=" width:60px"dojoType="dijit.form.Button">Cerrar</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="widgetPanel" id="widgetPanel_form_localizaciones" buttonIcon="assets/images/widget/i_mailbox.png" buttonText="Alta" style="display: none;">
+        <br />
+        <table style="width:100%">
+            <tr>
+                <th class="rowNombreCampo">Elemento vulnerable (*):</th>
+                <td><input id="selectElemento" name="selectElemento"></tr></td>
+            </tr>
+            <tr>
+                <th class="rowNombreCampo">Nombre localización (*):</th>
+                <td> 
+                    <input class="jimu-input-aux" type="text" name="inputNombLocalizacion" id="inputNombLocalizacion" style="width:80%" />
+                </td>
+            </tr>
+            <tr>
+                <th class="rowNombreCampo">Descripción:</th>
+                <td>
+                    <input class="jimu-input-aux" type="text" name="inputDescripcionLocalizacion" id="inputDescripcionLocalizacion" style="width:80%" />
+                </td>
+            </tr>
+            <tr>
+                <th class="rowNombreCampo">UTM X (*):</th>
+                <td>
+                    <input class="jimu-input-aux" type="text" name="inputLocalizacionUTMX" id="inputLocalizacionUTMX" style="width:80%" />
+                </td>
+            </tr>
+            <tr>
+                <th class="rowNombreCampo">UTM Y (*):</th>
+                <td>
+                    <input class="jimu-input-aux" type="text" name="inputLocalizacionUTMY" id="inputLocalizacionUTMY" style="width:80%" />
+                </td>
+            </tr>
+            <tr>
+                <th class="rowNombreCampo">Tipo Localización (*):</th>
+                <td>
+                    <select type="text" name="campoTiposLocalizacion" id="campoTiposLocalizacion" style="width:80%"></select>
+                </td>
+            </tr>
+        </table>
+        <br/>
+        <fieldset class="scheduler-border">
+            <legend class="scheduler-border">Documentación</legend>
+            <table style="width:100%">
+                <tr>
+                    <th >Tipo documento:</th>
+                    <td><select id="inputTipoDocumento_localizacion" name="inputTipoDocumento_localizacion" ></select></td>
+                </tr>
+                <tr>
+                    <th >Documento:</th>
+                    <td>
+                        <input type="text" name="inputDocumento_localizacion" id="inputDocumento_localizacion" style="width:80%" />
+                        <button id="btAniadirDocumentoLocalizacion" name="btAniadirDocumentoLocalizacion" type="button" dojoType="dijit.form.Button">Añadir</button>
+                    </td>
+                </tr>
+            </table>
+            <hr/>
+            <table style="width:100%" id="myTable_localizacion">
+                <tr>
+                    <th><b>Tipos documentos</b></th>
+                    <th><b>Documentos</b></th>
+                </tr> 
+            </table>
+        </fieldset>
+        <br>
+        <table style="width:100%">
+            <tr>
+                <td colspan="2" align="center">
+                    <button id="btAltaLocalizacion" name="btAltaLocalizacion" type="button" style=" width:60px"dojoType="dijit.form.Button">Alta</button>
+                    <button id="btCerrarAltaLocalizacion" name="btCerrarAltaLocalizacion" type="button" style=" width:60px"dojoType="dijit.form.Button">Cerrar</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

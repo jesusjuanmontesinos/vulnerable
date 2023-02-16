@@ -1,0 +1,81 @@
+{
+	"getUrlsWSValidacion":"getServicioValidacionUsuarios",
+	"tagNameGetUrlsWSValidacion":"getServicioValidacionUsuariosResponse",
+	"getPermisosPerfil":"getPermisosPerfil",
+	"tagNameGetPermisosPerfil":"getPermisosPerfilResponse",
+	"getValidarUsuario": "recuperarValidacion",
+	"getPermisosUsuario":"recuperarPermisos",
+	"TagNameRecuperarPermisos":"recuperarPermisosReturn",
+	"TagNameValidarUsuario":"recuperarValidacionReturn",
+	"idAplicacion":"62",	
+  "configGlobal":{
+		"urlWSGIS":"https://titan.emergencias.madrid.es/ServicioWebGIS/services/ServicioWebGIS",
+		"proxy":"/proxy/proxy.jsp?"
+	},
+"configLevels": {
+    "Level1": {
+      "Validacion":1,
+      "Direcciones":1,
+	  "Query":["Buscador Riesgos","Intervenciones Bomberos","Intervenciones Samur"],
+      "Posicionamiento":1,
+      "Posicionamiento_Intervencion":["Posicionamiento Samur","Posicionamiento Bomberos","Posicionamiento Portatiles"],
+      "EstadoTrafico":1,
+      "IncidenciaTrafico":1,
+      "GoogleView":1,
+      "Measurement":1,
+      "BasemapGallery":1,
+      "Print":1,
+      "Ayuda":1,
+	  "Legend":1,
+      "LayerList":1
+    },
+    "Level2": {
+      "Validacion":1,
+      "Direcciones":1,
+      "Posicionamiento":1,
+	  "Query":0,
+      "Posicionamiento_Intervencion":["Posicionamiento Samur","Posicionamiento Bomberos","Posicionamiento Portatiles"],
+      "EstadoTrafico":1,
+      "IncidenciaTrafico":1,
+      "GoogleView":1,
+      "Measurement":1,
+      "BasemapGallery":1,
+      "Print":1,
+      "Ayuda":1,
+	  "Legend":1,
+      "LayerList":1
+    },
+    "Level3": {
+      "Validacion":1,
+      "Direcciones":1,
+      "Posicionamiento":1,
+	  "Query":0,
+      "Posicionamiento_Intervencion":["Posicionamiento Samur","Posicionamiento Bomberos","Posicionamiento Portatiles"],
+      "EstadoTrafico":1,
+      "IncidenciaTrafico":1,
+      "GoogleView":1,
+      "Measurement":1,
+      "BasemapGallery":1,
+      "Print":1,
+      "Ayuda":1,
+	  "Legend":1,
+      "LayerList":1
+    },
+    "Level4": {
+      "Validacion":1,
+      "Direcciones":1,
+      "Query":0,
+      "Posicionamiento_Intervencion":0,
+	  "Posicionamiento":0,
+	  "EstadoTrafico":1,
+      "IncidenciaTrafico":1,
+      "GoogleView":1,
+      "Measurement":1,
+      "BasemapGallery":1,
+      "Print":1,
+      "Ayuda":1,
+	  "Legend":1,
+      "LayerList":1
+    }
+  }
+}

@@ -1,0 +1,77 @@
+<div style="width:100%; height:100%; min-width:280px;min-width:240px;">
+    <div class="widgetPanel" buttonIcon="assets/images/widget/i_mailbox.png" buttonText="AltaPlanDirector">
+        <br />
+        <br />
+        <table style="width:100%">
+            <tr>
+                <th class="rowNombreCampo">Nombre Plan director (*):</th>
+                <td>
+                    <input type="text" name="campoNombrePlan" id="campoNombrePlan" style="width:80%" />
+                </td>
+            </tr>
+            <tr>
+                <th class="rowNombreCampo">Descripción:</th>
+                <td>
+                    <input type="text" name="campoDescripcionPlan" id="campoDescripcionPlan" style="width:80%" />
+                </td>
+            </tr>
+        </table>
+        <br/>
+        <fieldset class="scheduler-border">
+            <legend class="scheduler-border">Elementos vulnerables</legend>
+            <table style="width:100%">
+                <tr>
+                    <th >Nombre Elementos vulnerables (*):</th>
+                    <td>
+                        <select id="campoNombreElementoVulnerablePlan" name="campoNombreElementoVulnerablePlan" ></select>
+                        <button id="btAniadirPlan" name="btAniadirPlan" type="button" dojoType="dijit.form.Button">Añadir</button>
+                    </td>
+                </tr>
+            </table>
+            <hr/>
+            <table style="width:100%" id="myTable_elementoPlan">
+                <tr>
+                    <th><b>Nombres</b></th>
+                    <th></th>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+        <fieldset class="scheduler-border">
+            <legend class="scheduler-border">Documentación</legend>
+            <table style="width:100%">
+                <tr>
+                    <th >Tipo documento:</th>
+                    <td><select id="campoTipoDocumentoPlan" name="campoTipoDocumentoPlan" ></select></td>
+                </tr>
+                <tr>
+                    <th >Documento:</th>
+                    <td>
+                        <input type="text" name="campoDocumentoPlan" id="campoDocumentoPlan" style="width:80%" />
+                        <button id="btAniadirDocumentoPlan" name="btAniadirDocumentoPlan" type="button" dojoType="dijit.form.Button">Añadir</button>
+                    </td>
+                </tr>
+            </table>
+            <hr/>
+            <table style="width:100%" id="myTable_documentacionPlan">
+                <tr>
+                    <th><b>Tipos documentos</b></th>
+                    <th><b>Documentos</b></th>
+                </tr>   
+            </table>
+        </fieldset>
+        <br>
+        <table style="width:100%">
+            <tr>
+                <td colspan="2" align="center">
+                    <button id="btAlta_plan" name="btAlta_plan" type="button" style=" width:60px"dojoType="dijit.form.Button">Alta</button>
+                    <button id="btCerrarPlan" name="btCerrarPlan" type="button" style=" width:60px"dojoType="dijit.form.Button">Cerrar</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="dijitHidden">
+        <!-- dialog that gets its content via ajax, uses loading message -->
+        <div data-dojo-type="dijit/Dialog" style="width:600px;" data-dojo-props="title:'Ajax Dialog',href:'dialog-ajax-content.html',loadingMessage:'Loading dialog content...'" id="ajaxDialog"></div>
+    </div>
+</div>

@@ -1,0 +1,97 @@
+<!-- Use this file to deploy some handlers/chains and services      -->
+<!-- Two ways to do this:                                           -->
+<!--   java org.apache.axis.client.AdminClient deploy.wsdd          -->
+<!--      after the axis server is running                          -->
+<!-- or                                                             -->
+<!--   java org.apache.axis.utils.Admin client|server deploy.wsdd   -->
+<!--      from the same directory that the Axis engine runs         -->
+
+<deployment
+    xmlns="http://xml.apache.org/axis/wsdd/"
+    xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+
+  <!-- Services from ServicioWebRiesgosService WSDL service -->
+
+  <service name="ServicioWebRiesgos" provider="java:RPC" style="wrapped" use="literal">
+      <parameter name="wsdlTargetNamespace" value="http://ti.eptisa.com"/>
+      <parameter name="wsdlServiceElement" value="ServicioWebRiesgosService"/>
+      <parameter name="schemaQualified" value="http://ti.eptisa.com"/>
+      <parameter name="wsdlServicePort" value="ServicioWebRiesgos"/>
+      <parameter name="className" value="com.eptisa.ti.ServicioWebRiesgosSoapBindingImpl"/>
+      <parameter name="wsdlPortType" value="ServicioWebRiesgos"/>
+      <parameter name="typeMappingVersion" value="1.2"/>
+      <operation name="getTipoRiesgo" qname="operNS:getTipoRiesgo" xmlns:operNS="http://ti.eptisa.com" returnQName="retNS:getTipoRiesgoReturn" xmlns:retNS="http://ti.eptisa.com" returnType="rtns:Descripcion" xmlns:rtns="http://ti.eptisa.com" soapAction="" >
+      </operation>
+      <operation name="getTiposFactor" qname="operNS:getTiposFactor" xmlns:operNS="http://ti.eptisa.com" returnQName="retNS:getTiposFactorReturn" xmlns:retNS="http://ti.eptisa.com" returnType="rtns:Descripcion" xmlns:rtns="http://ti.eptisa.com" soapAction="" >
+      </operation>
+      <operation name="getCategoria" qname="operNS:getCategoria" xmlns:operNS="http://ti.eptisa.com" returnQName="retNS:getCategoriaReturn" xmlns:retNS="http://ti.eptisa.com" returnType="rtns:Descripcion" xmlns:rtns="http://ti.eptisa.com" soapAction="" >
+        <parameter qname="pns:idClase" xmlns:pns="http://ti.eptisa.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="getFactor" qname="operNS:getFactor" xmlns:operNS="http://ti.eptisa.com" returnQName="retNS:getFactorReturn" xmlns:retNS="http://ti.eptisa.com" returnType="rtns:Descripcion" xmlns:rtns="http://ti.eptisa.com" soapAction="" >
+      </operation>
+      <operation name="getSubcategoria" qname="operNS:getSubcategoria" xmlns:operNS="http://ti.eptisa.com" returnQName="retNS:getSubcategoriaReturn" xmlns:retNS="http://ti.eptisa.com" returnType="rtns:Descripcion" xmlns:rtns="http://ti.eptisa.com" soapAction="" >
+        <parameter qname="pns:idCategoria" xmlns:pns="http://ti.eptisa.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="getMaxIdDocumento" qname="operNS:getMaxIdDocumento" xmlns:operNS="http://ti.eptisa.com" returnQName="retNS:getMaxIdDocumentoReturn" xmlns:retNS="http://ti.eptisa.com" returnType="rtns:int" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <operation name="getTiposDocumento" qname="operNS:getTiposDocumento" xmlns:operNS="http://ti.eptisa.com" returnQName="retNS:getTiposDocumentoReturn" xmlns:retNS="http://ti.eptisa.com" returnType="rtns:Descripcion" xmlns:rtns="http://ti.eptisa.com" soapAction="" >
+      </operation>
+      <operation name="getNextVal" qname="operNS:getNextVal" xmlns:operNS="http://ti.eptisa.com" returnQName="retNS:getNextValReturn" xmlns:retNS="http://ti.eptisa.com" returnType="rtns:int" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:tabla" xmlns:pns="http://ti.eptisa.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="getLocalizaciones" qname="operNS:getLocalizaciones" xmlns:operNS="http://ti.eptisa.com" returnQName="retNS:getLocalizacionesReturn" xmlns:retNS="http://ti.eptisa.com" returnType="rtns:Descripcion" xmlns:rtns="http://ti.eptisa.com" soapAction="" >
+        <parameter qname="pns:id_elemenetoVulnerable" xmlns:pns="http://ti.eptisa.com" type="tns:int" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="getCategoriasPorId" qname="operNS:getCategoriasPorId" xmlns:operNS="http://ti.eptisa.com" returnQName="retNS:getCategoriasPorIdReturn" xmlns:retNS="http://ti.eptisa.com" returnType="rtns:Descripcion" xmlns:rtns="http://ti.eptisa.com" soapAction="" >
+        <parameter qname="pns:idCategorias" xmlns:pns="http://ti.eptisa.com" type="tns:int" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="getFactoresPorId" qname="operNS:getFactoresPorId" xmlns:operNS="http://ti.eptisa.com" returnQName="retNS:getFactoresPorIdReturn" xmlns:retNS="http://ti.eptisa.com" returnType="rtns:Descripcion" xmlns:rtns="http://ti.eptisa.com" soapAction="" >
+        <parameter qname="pns:idFactores" xmlns:pns="http://ti.eptisa.com" type="tns:int" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="getMaxIdTipologia" qname="operNS:getMaxIdTipologia" xmlns:operNS="http://ti.eptisa.com" returnQName="retNS:getMaxIdTipologiaReturn" xmlns:retNS="http://ti.eptisa.com" returnType="rtns:int" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <operation name="getMaxIdTipado" qname="operNS:getMaxIdTipado" xmlns:operNS="http://ti.eptisa.com" returnQName="retNS:getMaxIdTipadoReturn" xmlns:retNS="http://ti.eptisa.com" returnType="rtns:int" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <operation name="getDistritos" qname="operNS:getDistritos" xmlns:operNS="http://ti.eptisa.com" returnQName="retNS:getDistritosReturn" xmlns:retNS="http://ti.eptisa.com" returnType="rtns:Descripcion" xmlns:rtns="http://ti.eptisa.com" soapAction="" >
+      </operation>
+      <operation name="getMaxIdFactorVulnerabilidad" qname="operNS:getMaxIdFactorVulnerabilidad" xmlns:operNS="http://ti.eptisa.com" returnQName="retNS:getMaxIdFactorVulnerabilidadReturn" xmlns:retNS="http://ti.eptisa.com" returnType="rtns:int" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <operation name="getMaxIdLozalizaciones" qname="operNS:getMaxIdLozalizaciones" xmlns:operNS="http://ti.eptisa.com" returnQName="retNS:getMaxIdLozalizacionesReturn" xmlns:retNS="http://ti.eptisa.com" returnType="rtns:int" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <operation name="getMaxIdElementoVulnerableP" qname="operNS:getMaxIdElementoVulnerableP" xmlns:operNS="http://ti.eptisa.com" returnQName="retNS:getMaxIdElementoVulnerablePReturn" xmlns:retNS="http://ti.eptisa.com" returnType="rtns:int" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <operation name="getMaxIdElementoVulnerableA" qname="operNS:getMaxIdElementoVulnerableA" xmlns:operNS="http://ti.eptisa.com" returnQName="retNS:getMaxIdElementoVulnerableAReturn" xmlns:retNS="http://ti.eptisa.com" returnType="rtns:int" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <operation name="getElementosVulnerables" qname="operNS:getElementosVulnerables" xmlns:operNS="http://ti.eptisa.com" returnQName="retNS:getElementosVulnerablesReturn" xmlns:retNS="http://ti.eptisa.com" returnType="rtns:Descripcion" xmlns:rtns="http://ti.eptisa.com" soapAction="" >
+      </operation>
+      <operation name="getMaxIdDocumentoLocalizacion" qname="operNS:getMaxIdDocumentoLocalizacion" xmlns:operNS="http://ti.eptisa.com" returnQName="retNS:getMaxIdDocumentoLocalizacionReturn" xmlns:retNS="http://ti.eptisa.com" returnType="rtns:int" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <operation name="getDocumentosVulnerables" qname="operNS:getDocumentosVulnerables" xmlns:operNS="http://ti.eptisa.com" returnQName="retNS:getDocumentosVulnerablesReturn" xmlns:retNS="http://ti.eptisa.com" returnType="rtns:Descripcion" xmlns:rtns="http://ti.eptisa.com" soapAction="" >
+        <parameter qname="pns:tipoDocumento" xmlns:pns="http://ti.eptisa.com" type="tns:int" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="getTiposFactoresXId" qname="operNS:getTiposFactoresXId" xmlns:operNS="http://ti.eptisa.com" returnQName="retNS:getTiposFactoresXIdReturn" xmlns:retNS="http://ti.eptisa.com" returnType="rtns:Descripcion" xmlns:rtns="http://ti.eptisa.com" soapAction="" >
+        <parameter qname="pns:idTipo" xmlns:pns="http://ti.eptisa.com" type="tns:int" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="getMaxIdPlanDirector" qname="operNS:getMaxIdPlanDirector" xmlns:operNS="http://ti.eptisa.com" returnQName="retNS:getMaxIdPlanDirectorReturn" xmlns:retNS="http://ti.eptisa.com" returnType="rtns:int" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <operation name="getMaxIdDocumentoPlanDirector" qname="operNS:getMaxIdDocumentoPlanDirector" xmlns:operNS="http://ti.eptisa.com" returnQName="retNS:getMaxIdDocumentoPlanDirectorReturn" xmlns:retNS="http://ti.eptisa.com" returnType="rtns:int" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <operation name="getTiposLocalizaciones" qname="operNS:getTiposLocalizaciones" xmlns:operNS="http://ti.eptisa.com" returnQName="retNS:getTiposLocalizacionesReturn" xmlns:retNS="http://ti.eptisa.com" returnType="rtns:Descripcion" xmlns:rtns="http://ti.eptisa.com" soapAction="" >
+      </operation>
+      <operation name="getMaxIdDocumentoVulnerable" qname="operNS:getMaxIdDocumentoVulnerable" xmlns:operNS="http://ti.eptisa.com" returnQName="retNS:getMaxIdDocumentoVulnerableReturn" xmlns:retNS="http://ti.eptisa.com" returnType="rtns:int" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <operation name="getSubcategoriasPorId" qname="operNS:getSubcategoriasPorId" xmlns:operNS="http://ti.eptisa.com" returnQName="retNS:getSubcategoriasPorIdReturn" xmlns:retNS="http://ti.eptisa.com" returnType="rtns:Descripcion" xmlns:rtns="http://ti.eptisa.com" soapAction="" >
+        <parameter qname="pns:idSubcategorias" xmlns:pns="http://ti.eptisa.com" type="tns:int" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <parameter name="allowedMethods" value="getTiposLocalizaciones getMaxIdDocumentoVulnerable getTipoRiesgo getMaxIdDocumento getTiposDocumento getMaxIdTipologia getMaxIdPlanDirector getMaxIdElementoVulnerableA getCategoriasPorId getNextVal getSubcategoria getMaxIdFactorVulnerabilidad getElementosVulnerables getMaxIdDocumentoLocalizacion getMaxIdElementoVulnerableP getDocumentosVulnerables getMaxIdLozalizaciones getFactoresPorId getMaxIdTipado getFactor getMaxIdDocumentoPlanDirector getTiposFactor getLocalizaciones getSubcategoriasPorId getTiposFactoresXId getCategoria getDistritos"/>
+
+      <typeMapping
+        xmlns:ns="http://ti.eptisa.com"
+        qname="ns:Descripcion"
+        type="java:com.eptisa.ti.Descripcion"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+  </service>
+</deployment>

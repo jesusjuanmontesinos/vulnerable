@@ -1,0 +1,27 @@
+{
+  "spatialReferences": [
+    {
+      "wkid": "25830",
+      "isDefault": false,
+      "label": "ETRS_1989_UTM_Zone_30N",
+      "alias": "ETRS_1989_UTM_Zone_30N",
+      "outputUnit": "METERS",
+      "transformationWkid": "",
+      "transformationLabel": "Transformation name",
+      "transformForward": false,
+      "options": {
+        "sameSRWithMap": true,
+        "isGeographicCS": false,
+        "isGeographicUnit": false,
+        "isProjectedCS": true,
+        "isProjectUnit": true,
+        "spheroidCS": 4258,
+        "defaultUnit": "Meter",
+        "unitRate": 0.001
+      }
+    }
+  ],
+  "decimalPlaces": 2,
+  "addSeparator": true,
+  "displayOrderLonLat": true
+}

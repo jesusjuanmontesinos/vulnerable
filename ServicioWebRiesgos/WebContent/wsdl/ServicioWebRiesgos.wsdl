@@ -1,0 +1,1584 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://ti.eptisa.com" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://ti.eptisa.com" xmlns:intf="http://ti.eptisa.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+ <wsdl:types>
+  <schema elementFormDefault="qualified" targetNamespace="http://ti.eptisa.com" xmlns="http://www.w3.org/2001/XMLSchema">
+   <element name="getTipoRiesgo">
+    <complexType/>
+   </element>
+   <element name="getTipoRiesgoResponse">
+    <complexType>
+     <sequence>
+      <element maxOccurs="unbounded" name="getTipoRiesgoReturn" type="impl:Descripcion"/>
+     </sequence>
+    </complexType>
+   </element>
+   <complexType name="Descripcion">
+    <sequence>
+     <element name="descripcion" nillable="true" type="xsd:string"/>
+     <element name="id" type="xsd:int"/>
+    </sequence>
+   </complexType>
+   <element name="getTiposFactor">
+    <complexType/>
+   </element>
+   <element name="getTiposFactorResponse">
+    <complexType>
+     <sequence>
+      <element maxOccurs="unbounded" name="getTiposFactorReturn" type="impl:Descripcion"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getCategoria">
+    <complexType>
+     <sequence>
+      <element name="idClase" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getCategoriaResponse">
+    <complexType>
+     <sequence>
+      <element maxOccurs="unbounded" name="getCategoriaReturn" type="impl:Descripcion"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getFactor">
+    <complexType/>
+   </element>
+   <element name="getFactorResponse">
+    <complexType>
+     <sequence>
+      <element maxOccurs="unbounded" name="getFactorReturn" type="impl:Descripcion"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getSubcategoria">
+    <complexType>
+     <sequence>
+      <element name="idCategoria" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getSubcategoriaResponse">
+    <complexType>
+     <sequence>
+      <element maxOccurs="unbounded" name="getSubcategoriaReturn" type="impl:Descripcion"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getMaxIdDocumento">
+    <complexType/>
+   </element>
+   <element name="getMaxIdDocumentoResponse">
+    <complexType>
+     <sequence>
+      <element name="getMaxIdDocumentoReturn" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getTiposDocumento">
+    <complexType/>
+   </element>
+   <element name="getTiposDocumentoResponse">
+    <complexType>
+     <sequence>
+      <element maxOccurs="unbounded" name="getTiposDocumentoReturn" type="impl:Descripcion"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getNextVal">
+    <complexType>
+     <sequence>
+      <element name="tabla" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getNextValResponse">
+    <complexType>
+     <sequence>
+      <element name="getNextValReturn" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getLocalizaciones">
+    <complexType>
+     <sequence>
+      <element name="id_elemenetoVulnerable" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getLocalizacionesResponse">
+    <complexType>
+     <sequence>
+      <element maxOccurs="unbounded" name="getLocalizacionesReturn" type="impl:Descripcion"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getCategoriasPorId">
+    <complexType>
+     <sequence>
+      <element maxOccurs="unbounded" name="idCategorias" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getCategoriasPorIdResponse">
+    <complexType>
+     <sequence>
+      <element maxOccurs="unbounded" name="getCategoriasPorIdReturn" type="impl:Descripcion"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getFactoresPorId">
+    <complexType>
+     <sequence>
+      <element maxOccurs="unbounded" name="idFactores" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getFactoresPorIdResponse">
+    <complexType>
+     <sequence>
+      <element maxOccurs="unbounded" name="getFactoresPorIdReturn" type="impl:Descripcion"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getMaxIdTipologia">
+    <complexType/>
+   </element>
+   <element name="getMaxIdTipologiaResponse">
+    <complexType>
+     <sequence>
+      <element name="getMaxIdTipologiaReturn" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getMaxIdTipado">
+    <complexType/>
+   </element>
+   <element name="getMaxIdTipadoResponse">
+    <complexType>
+     <sequence>
+      <element name="getMaxIdTipadoReturn" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getDistritos">
+    <complexType/>
+   </element>
+   <element name="getDistritosResponse">
+    <complexType>
+     <sequence>
+      <element maxOccurs="unbounded" name="getDistritosReturn" type="impl:Descripcion"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getMaxIdFactorVulnerabilidad">
+    <complexType/>
+   </element>
+   <element name="getMaxIdFactorVulnerabilidadResponse">
+    <complexType>
+     <sequence>
+      <element name="getMaxIdFactorVulnerabilidadReturn" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getMaxIdLozalizaciones">
+    <complexType/>
+   </element>
+   <element name="getMaxIdLozalizacionesResponse">
+    <complexType>
+     <sequence>
+      <element name="getMaxIdLozalizacionesReturn" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getMaxIdElementoVulnerableP">
+    <complexType/>
+   </element>
+   <element name="getMaxIdElementoVulnerablePResponse">
+    <complexType>
+     <sequence>
+      <element name="getMaxIdElementoVulnerablePReturn" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getMaxIdElementoVulnerableA">
+    <complexType/>
+   </element>
+   <element name="getMaxIdElementoVulnerableAResponse">
+    <complexType>
+     <sequence>
+      <element name="getMaxIdElementoVulnerableAReturn" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getElementosVulnerables">
+    <complexType/>
+   </element>
+   <element name="getElementosVulnerablesResponse">
+    <complexType>
+     <sequence>
+      <element maxOccurs="unbounded" name="getElementosVulnerablesReturn" type="impl:Descripcion"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getMaxIdDocumentoLocalizacion">
+    <complexType/>
+   </element>
+   <element name="getMaxIdDocumentoLocalizacionResponse">
+    <complexType>
+     <sequence>
+      <element name="getMaxIdDocumentoLocalizacionReturn" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getDocumentosVulnerables">
+    <complexType>
+     <sequence>
+      <element name="tipoDocumento" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getDocumentosVulnerablesResponse">
+    <complexType>
+     <sequence>
+      <element maxOccurs="unbounded" name="getDocumentosVulnerablesReturn" type="impl:Descripcion"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getTiposFactoresXId">
+    <complexType>
+     <sequence>
+      <element maxOccurs="unbounded" name="idTipo" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getTiposFactoresXIdResponse">
+    <complexType>
+     <sequence>
+      <element maxOccurs="unbounded" name="getTiposFactoresXIdReturn" type="impl:Descripcion"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getMaxIdPlanDirector">
+    <complexType/>
+   </element>
+   <element name="getMaxIdPlanDirectorResponse">
+    <complexType>
+     <sequence>
+      <element name="getMaxIdPlanDirectorReturn" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getMaxIdDocumentoPlanDirector">
+    <complexType/>
+   </element>
+   <element name="getMaxIdDocumentoPlanDirectorResponse">
+    <complexType>
+     <sequence>
+      <element name="getMaxIdDocumentoPlanDirectorReturn" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getTiposLocalizaciones">
+    <complexType/>
+   </element>
+   <element name="getTiposLocalizacionesResponse">
+    <complexType>
+     <sequence>
+      <element maxOccurs="unbounded" name="getTiposLocalizacionesReturn" type="impl:Descripcion"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getMaxIdDocumentoVulnerable">
+    <complexType/>
+   </element>
+   <element name="getMaxIdDocumentoVulnerableResponse">
+    <complexType>
+     <sequence>
+      <element name="getMaxIdDocumentoVulnerableReturn" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getSubcategoriasPorId">
+    <complexType>
+     <sequence>
+      <element maxOccurs="unbounded" name="idSubcategorias" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getSubcategoriasPorIdResponse">
+    <complexType>
+     <sequence>
+      <element maxOccurs="unbounded" name="getSubcategoriasPorIdReturn" type="impl:Descripcion"/>
+     </sequence>
+    </complexType>
+   </element>
+  </schema>
+ </wsdl:types>
+
+   <wsdl:message name="getTiposFactoresXIdRequest">
+
+      <wsdl:part element="impl:getTiposFactoresXId" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getTiposFactoresXIdResponse">
+
+      <wsdl:part element="impl:getTiposFactoresXIdResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getTiposFactorResponse">
+
+      <wsdl:part element="impl:getTiposFactorResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getMaxIdElementoVulnerableAResponse">
+
+      <wsdl:part element="impl:getMaxIdElementoVulnerableAResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getMaxIdFactorVulnerabilidadRequest">
+
+      <wsdl:part element="impl:getMaxIdFactorVulnerabilidad" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getMaxIdPlanDirectorResponse">
+
+      <wsdl:part element="impl:getMaxIdPlanDirectorResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getMaxIdDocumentoResponse">
+
+      <wsdl:part element="impl:getMaxIdDocumentoResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getLocalizacionesRequest">
+
+      <wsdl:part element="impl:getLocalizaciones" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getMaxIdLozalizacionesRequest">
+
+      <wsdl:part element="impl:getMaxIdLozalizaciones" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getMaxIdDocumentoLocalizacionResponse">
+
+      <wsdl:part element="impl:getMaxIdDocumentoLocalizacionResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getMaxIdDocumentoRequest">
+
+      <wsdl:part element="impl:getMaxIdDocumento" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getMaxIdElementoVulnerableARequest">
+
+      <wsdl:part element="impl:getMaxIdElementoVulnerableA" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getMaxIdElementoVulnerablePRequest">
+
+      <wsdl:part element="impl:getMaxIdElementoVulnerableP" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getFactoresPorIdRequest">
+
+      <wsdl:part element="impl:getFactoresPorId" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getMaxIdDocumentoPlanDirectorResponse">
+
+      <wsdl:part element="impl:getMaxIdDocumentoPlanDirectorResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getElementosVulnerablesResponse">
+
+      <wsdl:part element="impl:getElementosVulnerablesResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getMaxIdTipologiaRequest">
+
+      <wsdl:part element="impl:getMaxIdTipologia" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getNextValRequest">
+
+      <wsdl:part element="impl:getNextVal" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getTiposLocalizacionesResponse">
+
+      <wsdl:part element="impl:getTiposLocalizacionesResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getLocalizacionesResponse">
+
+      <wsdl:part element="impl:getLocalizacionesResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getMaxIdDocumentoPlanDirectorRequest">
+
+      <wsdl:part element="impl:getMaxIdDocumentoPlanDirector" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getTiposLocalizacionesRequest">
+
+      <wsdl:part element="impl:getTiposLocalizaciones" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getMaxIdPlanDirectorRequest">
+
+      <wsdl:part element="impl:getMaxIdPlanDirector" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getMaxIdTipologiaResponse">
+
+      <wsdl:part element="impl:getMaxIdTipologiaResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getFactoresPorIdResponse">
+
+      <wsdl:part element="impl:getFactoresPorIdResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getDistritosRequest">
+
+      <wsdl:part element="impl:getDistritos" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getDistritosResponse">
+
+      <wsdl:part element="impl:getDistritosResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getMaxIdFactorVulnerabilidadResponse">
+
+      <wsdl:part element="impl:getMaxIdFactorVulnerabilidadResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getElementosVulnerablesRequest">
+
+      <wsdl:part element="impl:getElementosVulnerables" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getNextValResponse">
+
+      <wsdl:part element="impl:getNextValResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getFactorResponse">
+
+      <wsdl:part element="impl:getFactorResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getTiposDocumentoRequest">
+
+      <wsdl:part element="impl:getTiposDocumento" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getTipoRiesgoResponse">
+
+      <wsdl:part element="impl:getTipoRiesgoResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getSubcategoriaResponse">
+
+      <wsdl:part element="impl:getSubcategoriaResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getCategoriaRequest">
+
+      <wsdl:part element="impl:getCategoria" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getCategoriasPorIdRequest">
+
+      <wsdl:part element="impl:getCategoriasPorId" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getSubcategoriaRequest">
+
+      <wsdl:part element="impl:getSubcategoria" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getSubcategoriasPorIdRequest">
+
+      <wsdl:part element="impl:getSubcategoriasPorId" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getTipoRiesgoRequest">
+
+      <wsdl:part element="impl:getTipoRiesgo" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getMaxIdDocumentoVulnerableRequest">
+
+      <wsdl:part element="impl:getMaxIdDocumentoVulnerable" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getMaxIdDocumentoVulnerableResponse">
+
+      <wsdl:part element="impl:getMaxIdDocumentoVulnerableResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getCategoriaResponse">
+
+      <wsdl:part element="impl:getCategoriaResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getTiposDocumentoResponse">
+
+      <wsdl:part element="impl:getTiposDocumentoResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getMaxIdTipadoResponse">
+
+      <wsdl:part element="impl:getMaxIdTipadoResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getFactorRequest">
+
+      <wsdl:part element="impl:getFactor" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getCategoriasPorIdResponse">
+
+      <wsdl:part element="impl:getCategoriasPorIdResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getDocumentosVulnerablesRequest">
+
+      <wsdl:part element="impl:getDocumentosVulnerables" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getSubcategoriasPorIdResponse">
+
+      <wsdl:part element="impl:getSubcategoriasPorIdResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getMaxIdElementoVulnerablePResponse">
+
+      <wsdl:part element="impl:getMaxIdElementoVulnerablePResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getDocumentosVulnerablesResponse">
+
+      <wsdl:part element="impl:getDocumentosVulnerablesResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getMaxIdLozalizacionesResponse">
+
+      <wsdl:part element="impl:getMaxIdLozalizacionesResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getTiposFactorRequest">
+
+      <wsdl:part element="impl:getTiposFactor" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getMaxIdTipadoRequest">
+
+      <wsdl:part element="impl:getMaxIdTipado" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getMaxIdDocumentoLocalizacionRequest">
+
+      <wsdl:part element="impl:getMaxIdDocumentoLocalizacion" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:portType name="ServicioWebRiesgos">
+
+      <wsdl:operation name="getTipoRiesgo">
+
+         <wsdl:input message="impl:getTipoRiesgoRequest" name="getTipoRiesgoRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getTipoRiesgoResponse" name="getTipoRiesgoResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getTiposFactor">
+
+         <wsdl:input message="impl:getTiposFactorRequest" name="getTiposFactorRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getTiposFactorResponse" name="getTiposFactorResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getCategoria">
+
+         <wsdl:input message="impl:getCategoriaRequest" name="getCategoriaRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getCategoriaResponse" name="getCategoriaResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getFactor">
+
+         <wsdl:input message="impl:getFactorRequest" name="getFactorRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getFactorResponse" name="getFactorResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getSubcategoria">
+
+         <wsdl:input message="impl:getSubcategoriaRequest" name="getSubcategoriaRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getSubcategoriaResponse" name="getSubcategoriaResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getMaxIdDocumento">
+
+         <wsdl:input message="impl:getMaxIdDocumentoRequest" name="getMaxIdDocumentoRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getMaxIdDocumentoResponse" name="getMaxIdDocumentoResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getTiposDocumento">
+
+         <wsdl:input message="impl:getTiposDocumentoRequest" name="getTiposDocumentoRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getTiposDocumentoResponse" name="getTiposDocumentoResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getNextVal">
+
+         <wsdl:input message="impl:getNextValRequest" name="getNextValRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getNextValResponse" name="getNextValResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getLocalizaciones">
+
+         <wsdl:input message="impl:getLocalizacionesRequest" name="getLocalizacionesRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getLocalizacionesResponse" name="getLocalizacionesResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getCategoriasPorId">
+
+         <wsdl:input message="impl:getCategoriasPorIdRequest" name="getCategoriasPorIdRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getCategoriasPorIdResponse" name="getCategoriasPorIdResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getFactoresPorId">
+
+         <wsdl:input message="impl:getFactoresPorIdRequest" name="getFactoresPorIdRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getFactoresPorIdResponse" name="getFactoresPorIdResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getMaxIdTipologia">
+
+         <wsdl:input message="impl:getMaxIdTipologiaRequest" name="getMaxIdTipologiaRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getMaxIdTipologiaResponse" name="getMaxIdTipologiaResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getMaxIdTipado">
+
+         <wsdl:input message="impl:getMaxIdTipadoRequest" name="getMaxIdTipadoRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getMaxIdTipadoResponse" name="getMaxIdTipadoResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getDistritos">
+
+         <wsdl:input message="impl:getDistritosRequest" name="getDistritosRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getDistritosResponse" name="getDistritosResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getMaxIdFactorVulnerabilidad">
+
+         <wsdl:input message="impl:getMaxIdFactorVulnerabilidadRequest" name="getMaxIdFactorVulnerabilidadRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getMaxIdFactorVulnerabilidadResponse" name="getMaxIdFactorVulnerabilidadResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getMaxIdLozalizaciones">
+
+         <wsdl:input message="impl:getMaxIdLozalizacionesRequest" name="getMaxIdLozalizacionesRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getMaxIdLozalizacionesResponse" name="getMaxIdLozalizacionesResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getMaxIdElementoVulnerableP">
+
+         <wsdl:input message="impl:getMaxIdElementoVulnerablePRequest" name="getMaxIdElementoVulnerablePRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getMaxIdElementoVulnerablePResponse" name="getMaxIdElementoVulnerablePResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getMaxIdElementoVulnerableA">
+
+         <wsdl:input message="impl:getMaxIdElementoVulnerableARequest" name="getMaxIdElementoVulnerableARequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getMaxIdElementoVulnerableAResponse" name="getMaxIdElementoVulnerableAResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getElementosVulnerables">
+
+         <wsdl:input message="impl:getElementosVulnerablesRequest" name="getElementosVulnerablesRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getElementosVulnerablesResponse" name="getElementosVulnerablesResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getMaxIdDocumentoLocalizacion">
+
+         <wsdl:input message="impl:getMaxIdDocumentoLocalizacionRequest" name="getMaxIdDocumentoLocalizacionRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getMaxIdDocumentoLocalizacionResponse" name="getMaxIdDocumentoLocalizacionResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getDocumentosVulnerables">
+
+         <wsdl:input message="impl:getDocumentosVulnerablesRequest" name="getDocumentosVulnerablesRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getDocumentosVulnerablesResponse" name="getDocumentosVulnerablesResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getTiposFactoresXId">
+
+         <wsdl:input message="impl:getTiposFactoresXIdRequest" name="getTiposFactoresXIdRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getTiposFactoresXIdResponse" name="getTiposFactoresXIdResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getMaxIdPlanDirector">
+
+         <wsdl:input message="impl:getMaxIdPlanDirectorRequest" name="getMaxIdPlanDirectorRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getMaxIdPlanDirectorResponse" name="getMaxIdPlanDirectorResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getMaxIdDocumentoPlanDirector">
+
+         <wsdl:input message="impl:getMaxIdDocumentoPlanDirectorRequest" name="getMaxIdDocumentoPlanDirectorRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getMaxIdDocumentoPlanDirectorResponse" name="getMaxIdDocumentoPlanDirectorResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getTiposLocalizaciones">
+
+         <wsdl:input message="impl:getTiposLocalizacionesRequest" name="getTiposLocalizacionesRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getTiposLocalizacionesResponse" name="getTiposLocalizacionesResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getMaxIdDocumentoVulnerable">
+
+         <wsdl:input message="impl:getMaxIdDocumentoVulnerableRequest" name="getMaxIdDocumentoVulnerableRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getMaxIdDocumentoVulnerableResponse" name="getMaxIdDocumentoVulnerableResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getSubcategoriasPorId">
+
+         <wsdl:input message="impl:getSubcategoriasPorIdRequest" name="getSubcategoriasPorIdRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getSubcategoriasPorIdResponse" name="getSubcategoriasPorIdResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="ServicioWebRiesgosSoapBinding" type="impl:ServicioWebRiesgos">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="getTipoRiesgo">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getTipoRiesgoRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getTipoRiesgoResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getTiposFactor">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getTiposFactorRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getTiposFactorResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getCategoria">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getCategoriaRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getCategoriaResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getFactor">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getFactorRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getFactorResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getSubcategoria">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getSubcategoriaRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getSubcategoriaResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getMaxIdDocumento">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getMaxIdDocumentoRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getMaxIdDocumentoResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getTiposDocumento">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getTiposDocumentoRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getTiposDocumentoResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getNextVal">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getNextValRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getNextValResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getLocalizaciones">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getLocalizacionesRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getLocalizacionesResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getCategoriasPorId">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getCategoriasPorIdRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getCategoriasPorIdResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getFactoresPorId">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getFactoresPorIdRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getFactoresPorIdResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getMaxIdTipologia">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getMaxIdTipologiaRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getMaxIdTipologiaResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getMaxIdTipado">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getMaxIdTipadoRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getMaxIdTipadoResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getDistritos">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getDistritosRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getDistritosResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getMaxIdFactorVulnerabilidad">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getMaxIdFactorVulnerabilidadRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getMaxIdFactorVulnerabilidadResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getMaxIdLozalizaciones">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getMaxIdLozalizacionesRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getMaxIdLozalizacionesResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getMaxIdElementoVulnerableP">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getMaxIdElementoVulnerablePRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getMaxIdElementoVulnerablePResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getMaxIdElementoVulnerableA">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getMaxIdElementoVulnerableARequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getMaxIdElementoVulnerableAResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getElementosVulnerables">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getElementosVulnerablesRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getElementosVulnerablesResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getMaxIdDocumentoLocalizacion">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getMaxIdDocumentoLocalizacionRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getMaxIdDocumentoLocalizacionResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getDocumentosVulnerables">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getDocumentosVulnerablesRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getDocumentosVulnerablesResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getTiposFactoresXId">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getTiposFactoresXIdRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getTiposFactoresXIdResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getMaxIdPlanDirector">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getMaxIdPlanDirectorRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getMaxIdPlanDirectorResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getMaxIdDocumentoPlanDirector">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getMaxIdDocumentoPlanDirectorRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getMaxIdDocumentoPlanDirectorResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getTiposLocalizaciones">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getTiposLocalizacionesRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getTiposLocalizacionesResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getMaxIdDocumentoVulnerable">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getMaxIdDocumentoVulnerableRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getMaxIdDocumentoVulnerableResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getSubcategoriasPorId">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getSubcategoriasPorIdRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getSubcategoriasPorIdResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="ServicioWebRiesgosService">
+
+      <wsdl:port binding="impl:ServicioWebRiesgosSoapBinding" name="ServicioWebRiesgos">
+
+         <wsdlsoap:address location="http://localhost:8090/ServicioWebRiesgos/services/ServicioWebRiesgos"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>

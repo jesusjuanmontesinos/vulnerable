@@ -1,0 +1,22 @@
+{
+  "showTitle": true,
+  "showBasemap": false,
+  "showLegend": true,
+  "expandAllLayersByDefault": false,
+  "contextMenu": {
+	"ZoomTo": true,
+	"Transparency": true,
+	"SetVisibilityRange": true,
+	"EnableOrDisablePopup": true,
+  "ControlLabels": true,
+	"MoveupOrMovedown": true,
+	"OpenAttributeTable": true,
+	"DescriptionOrShowItemDetailsOrDownload": true
+  },
+  "configLevels": {
+    "1": [],
+    "2": ["Tiempos de Respuesta de Bomberos", "Intervenciones de Bomberos", "Tiempos de Respuesta de Samur", "Intervenciones de Samur"],
+    "3": ["Tiempos de Respuesta de Bomberos", "Intervenciones de Bomberos", "Tiempos de Respuesta de Samur", "Intervenciones de Samur"],
+    "4": ["Camaras","Intervenciones en Curso","Eventos de Proteccion Civil", "Tiempos de Respuesta de Bomberos", "Intervenciones de Bomberos", "Tiempos de Respuesta de Samur", "Intervenciones de Samur"]
+  }
+}

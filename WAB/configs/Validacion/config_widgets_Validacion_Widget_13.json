@@ -1,0 +1,79 @@
+{
+  "getUrlsWSValidacion": "getServicioValidacionUsuarios",
+  "tagNameGetUrlsWSValidacion": "getServicioValidacionUsuariosResponse",
+  "getPermisosPerfil": "getPermisosPerfil",
+  "tagNameGetPermisosPerfil": "getPermisosPerfilResponse",
+  "getValidarUsuario": "recuperarValidacion",
+  "getPermisosUsuario": "recuperarPermisos",
+  "TagNameRecuperarPermisos": "recuperarPermisosReturn",
+  "TagNameValidarUsuario": "recuperarValidacionReturn",
+  "idAplicacion": "62",
+  "configGlobal": {
+    "urlWSGIS": "https://natlante.emergencias.madrid.es/ServicioWebGIS/services/ServicioWebGIS",
+    "proxy": "/proxy/proxy.jsp?"
+  },
+  "configLevels": {
+    "Level1": {
+      "Validacion": 1,
+      "Legend": 1,
+      "LayerList": 1,
+      "BasemapGallery": 1,
+      "Direcciones": 1,
+      "Riesgo": 1,
+      "Documentación": 1,
+      "PlanDirector": 1,
+      "Query": 1,
+      "Measurement": 1,
+      "Print": 1,
+      "Ayuda": 1
+    },
+    "Level2": {
+      "Validacion": 1,
+      "Legend": 1,
+      "LayerList": 1,
+      "BasemapGallery": 1,
+      "Direcciones": 1,
+      "Riesgo": 1,
+      "Documentación": 1,
+      "PlanDirector": 1,
+      "Query": 1,
+      "Measurement": 1,
+      "Print": 1,
+      "Ayuda": 1
+    },
+    "Level3": {
+      "Validacion": 1,
+      "Legend": 1,
+      "LayerList": 1,
+      "BasemapGallery": 1,
+      "Direcciones": 1,
+      "Riesgo": 1,
+      "Documentación": 1,
+      "PlanDirector": 1,
+      "Query": 1,
+      "Measurement": 1,
+      "Print": 1,
+      "Ayuda": 1
+    },
+    "Level4": {
+      "Validacion": 1,
+      "Legend": 1,
+      "LayerList": 1,
+      "BasemapGallery": 1,
+      "Direcciones": 1,
+      "Riesgo": 1,
+      "Documentación": 1,
+      "PlanDirector": 1,
+      "Query": 1,
+      "Measurement": 1,
+      "Print": 1,
+      "Ayuda": 1
+    }
+  },
+  "Titulo": "Dirección General de Emergencias y Protección Civil",
+  "Subtitulo": "Ayuntamiento de Madrid",
+  "Version": "Versión 1.0",
+  "Fecha": "08/02/2022",
+  "TituloAyuda": "/recursos/visoremergencias/Manual/Manual.pdf",
+  "TituloVersion": "Novedades de esta versión"
+}

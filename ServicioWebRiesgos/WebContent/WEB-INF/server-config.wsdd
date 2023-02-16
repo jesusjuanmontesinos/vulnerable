@@ -1,0 +1,108 @@
+<ns1:deployment xmlns="http://xml.apache.org/axis/wsdd/" xmlns:java="http://xml.apache.org/axis/wsdd/providers/java" xmlns:ns1="http://xml.apache.org/axis/wsdd/">
+ <ns1:globalConfiguration>
+  <ns1:parameter name="sendMultiRefs" value="true"/>
+  <ns1:parameter name="disablePrettyXML" value="true"/>
+  <ns1:parameter name="adminPassword" value="admin"/>
+  <ns1:parameter name="attachments.Directory" value="C:\Users\wellington.romero\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\ServicioWebRiesgos\WEB-INF\attachments"/>
+  <ns1:parameter name="dotNetSoapEncFix" value="true"/>
+  <ns1:parameter name="enableNamespacePrefixOptimization" value="false"/>
+  <ns1:parameter name="sendXMLDeclaration" value="true"/>
+  <ns1:parameter name="attachments.implementation" value="org.apache.axis.attachments.AttachmentsImpl"/>
+  <ns1:parameter name="sendXsiTypes" value="true"/>
+  <ns1:requestFlow>
+   <ns1:handler type="java:org.apache.axis.handlers.JWSHandler">
+    <ns1:parameter name="scope" value="session"/>
+   </ns1:handler>
+   <ns1:handler type="java:org.apache.axis.handlers.JWSHandler">
+    <ns1:parameter name="scope" value="request"/>
+    <ns1:parameter name="extension" value=".jwr"/>
+   </ns1:handler>
+  </ns1:requestFlow>
+ </ns1:globalConfiguration>
+ <ns1:handler name="URLMapper" type="java:org.apache.axis.handlers.http.URLMapper"/>
+ <ns1:handler name="Authenticate" type="java:org.apache.axis.handlers.SimpleAuthenticationHandler"/>
+ <ns1:handler name="LocalResponder" type="java:org.apache.axis.transport.local.LocalResponder"/>
+ <ns1:service name="AdminService" provider="java:MSG">
+  <ns1:parameter name="allowedMethods" value="AdminService"/>
+  <ns1:parameter name="enableRemoteAdmin" value="false"/>
+  <ns1:parameter name="className" value="org.apache.axis.utils.Admin"/>
+  <ns1:namespace>http://xml.apache.org/axis/wsdd/</ns1:namespace>
+ </ns1:service>
+ <ns1:service name="ServicioWebRiesgos" provider="java:RPC" style="wrapped" use="literal">
+  <ns2:operation name="getTipoRiesgo" qname="ns1:getTipoRiesgo" returnQName="ns1:getTipoRiesgoReturn" returnType="ns1:Descripcion" soapAction="" xmlns:ns1="http://ti.eptisa.com" xmlns:ns2="http://xml.apache.org/axis/wsdd/"/>
+  <ns1:operation name="getTiposFactor" qname="ns2:getTiposFactor" returnQName="ns2:getTiposFactorReturn" returnType="ns2:Descripcion" soapAction="" xmlns:ns2="http://ti.eptisa.com"/>
+  <ns1:operation name="getCategoria" qname="ns3:getCategoria" returnQName="ns3:getCategoriaReturn" returnType="ns3:Descripcion" soapAction="" xmlns:ns3="http://ti.eptisa.com">
+   <ns1:parameter qname="ns3:idClase" type="xsd:string" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
+  </ns1:operation>
+  <ns1:operation name="getFactor" qname="ns4:getFactor" returnQName="ns4:getFactorReturn" returnType="ns4:Descripcion" soapAction="" xmlns:ns4="http://ti.eptisa.com"/>
+  <ns1:operation name="getSubcategoria" qname="ns5:getSubcategoria" returnQName="ns5:getSubcategoriaReturn" returnType="ns5:Descripcion" soapAction="" xmlns:ns5="http://ti.eptisa.com">
+   <ns1:parameter qname="ns5:idCategoria" type="xsd:string" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
+  </ns1:operation>
+  <ns1:operation name="getMaxIdDocumento" qname="ns6:getMaxIdDocumento" returnQName="ns6:getMaxIdDocumentoReturn" returnType="xsd:int" soapAction="" xmlns:ns6="http://ti.eptisa.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
+  <ns1:operation name="getTiposDocumento" qname="ns7:getTiposDocumento" returnQName="ns7:getTiposDocumentoReturn" returnType="ns7:Descripcion" soapAction="" xmlns:ns7="http://ti.eptisa.com"/>
+  <ns1:operation name="getNextVal" qname="ns8:getNextVal" returnQName="ns8:getNextValReturn" returnType="xsd:int" soapAction="" xmlns:ns8="http://ti.eptisa.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <ns1:parameter qname="ns8:tabla" type="xsd:string"/>
+  </ns1:operation>
+  <ns1:operation name="getLocalizaciones" qname="ns9:getLocalizaciones" returnQName="ns9:getLocalizacionesReturn" returnType="ns9:Descripcion" soapAction="" xmlns:ns9="http://ti.eptisa.com">
+   <ns1:parameter qname="ns9:id_elemenetoVulnerable" type="xsd:int" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
+  </ns1:operation>
+  <ns1:operation name="getCategoriasPorId" qname="ns10:getCategoriasPorId" returnQName="ns10:getCategoriasPorIdReturn" returnType="ns10:Descripcion" soapAction="" xmlns:ns10="http://ti.eptisa.com">
+   <ns1:parameter qname="ns10:idCategorias" type="xsd:int" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
+  </ns1:operation>
+  <ns1:operation name="getFactoresPorId" qname="ns11:getFactoresPorId" returnQName="ns11:getFactoresPorIdReturn" returnType="ns11:Descripcion" soapAction="" xmlns:ns11="http://ti.eptisa.com">
+   <ns1:parameter qname="ns11:idFactores" type="xsd:int" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
+  </ns1:operation>
+  <ns1:operation name="getMaxIdTipologia" qname="ns12:getMaxIdTipologia" returnQName="ns12:getMaxIdTipologiaReturn" returnType="xsd:int" soapAction="" xmlns:ns12="http://ti.eptisa.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
+  <ns1:operation name="getMaxIdTipado" qname="ns13:getMaxIdTipado" returnQName="ns13:getMaxIdTipadoReturn" returnType="xsd:int" soapAction="" xmlns:ns13="http://ti.eptisa.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
+  <ns1:operation name="getDistritos" qname="ns14:getDistritos" returnQName="ns14:getDistritosReturn" returnType="ns14:Descripcion" soapAction="" xmlns:ns14="http://ti.eptisa.com"/>
+  <ns1:operation name="getMaxIdFactorVulnerabilidad" qname="ns15:getMaxIdFactorVulnerabilidad" returnQName="ns15:getMaxIdFactorVulnerabilidadReturn" returnType="xsd:int" soapAction="" xmlns:ns15="http://ti.eptisa.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
+  <ns1:operation name="getMaxIdLozalizaciones" qname="ns16:getMaxIdLozalizaciones" returnQName="ns16:getMaxIdLozalizacionesReturn" returnType="xsd:int" soapAction="" xmlns:ns16="http://ti.eptisa.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
+  <ns1:operation name="getMaxIdElementoVulnerableP" qname="ns17:getMaxIdElementoVulnerableP" returnQName="ns17:getMaxIdElementoVulnerablePReturn" returnType="xsd:int" soapAction="" xmlns:ns17="http://ti.eptisa.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
+  <ns1:operation name="getMaxIdElementoVulnerableA" qname="ns18:getMaxIdElementoVulnerableA" returnQName="ns18:getMaxIdElementoVulnerableAReturn" returnType="xsd:int" soapAction="" xmlns:ns18="http://ti.eptisa.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
+  <ns1:operation name="getElementosVulnerables" qname="ns19:getElementosVulnerables" returnQName="ns19:getElementosVulnerablesReturn" returnType="ns19:Descripcion" soapAction="" xmlns:ns19="http://ti.eptisa.com"/>
+  <ns1:operation name="getMaxIdDocumentoLocalizacion" qname="ns20:getMaxIdDocumentoLocalizacion" returnQName="ns20:getMaxIdDocumentoLocalizacionReturn" returnType="xsd:int" soapAction="" xmlns:ns20="http://ti.eptisa.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
+  <ns1:operation name="getDocumentosVulnerables" qname="ns21:getDocumentosVulnerables" returnQName="ns21:getDocumentosVulnerablesReturn" returnType="ns21:Descripcion" soapAction="" xmlns:ns21="http://ti.eptisa.com">
+   <ns1:parameter qname="ns21:tipoDocumento" type="xsd:int" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
+  </ns1:operation>
+  <ns1:operation name="getTiposFactoresXId" qname="ns22:getTiposFactoresXId" returnQName="ns22:getTiposFactoresXIdReturn" returnType="ns22:Descripcion" soapAction="" xmlns:ns22="http://ti.eptisa.com">
+   <ns1:parameter qname="ns22:idTipo" type="xsd:int" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
+  </ns1:operation>
+  <ns1:operation name="getMaxIdPlanDirector" qname="ns23:getMaxIdPlanDirector" returnQName="ns23:getMaxIdPlanDirectorReturn" returnType="xsd:int" soapAction="" xmlns:ns23="http://ti.eptisa.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
+  <ns1:operation name="getMaxIdDocumentoPlanDirector" qname="ns24:getMaxIdDocumentoPlanDirector" returnQName="ns24:getMaxIdDocumentoPlanDirectorReturn" returnType="xsd:int" soapAction="" xmlns:ns24="http://ti.eptisa.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
+  <ns1:operation name="getTiposLocalizaciones" qname="ns25:getTiposLocalizaciones" returnQName="ns25:getTiposLocalizacionesReturn" returnType="ns25:Descripcion" soapAction="" xmlns:ns25="http://ti.eptisa.com"/>
+  <ns1:operation name="getMaxIdDocumentoVulnerable" qname="ns26:getMaxIdDocumentoVulnerable" returnQName="ns26:getMaxIdDocumentoVulnerableReturn" returnType="xsd:int" soapAction="" xmlns:ns26="http://ti.eptisa.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
+  <ns1:operation name="getSubcategoriasPorId" qname="ns27:getSubcategoriasPorId" returnQName="ns27:getSubcategoriasPorIdReturn" returnType="ns27:Descripcion" soapAction="" xmlns:ns27="http://ti.eptisa.com">
+   <ns1:parameter qname="ns27:idSubcategorias" type="xsd:int" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
+  </ns1:operation>
+  <ns1:parameter name="allowedMethods" value="getTiposLocalizaciones getMaxIdDocumentoVulnerable getTipoRiesgo getMaxIdDocumento getTiposDocumento getMaxIdTipologia getMaxIdPlanDirector getMaxIdElementoVulnerableA getCategoriasPorId getNextVal getSubcategoria getMaxIdFactorVulnerabilidad getElementosVulnerables getMaxIdDocumentoLocalizacion getMaxIdElementoVulnerableP getDocumentosVulnerables getMaxIdLozalizaciones getFactoresPorId getMaxIdTipado getFactor getMaxIdDocumentoPlanDirector getTiposFactor getLocalizaciones getSubcategoriasPorId getTiposFactoresXId getCategoria getDistritos"/>
+  <ns1:parameter name="typeMappingVersion" value="1.2"/>
+  <ns1:parameter name="wsdlPortType" value="ServicioWebRiesgos"/>
+  <ns1:parameter name="className" value="com.eptisa.ti.ServicioWebRiesgos"/>
+  <ns1:parameter name="wsdlServicePort" value="ServicioWebRiesgos"/>
+  <ns1:parameter name="schemaQualified" value="http://ti.eptisa.com"/>
+  <ns1:parameter name="wsdlTargetNamespace" value="http://ti.eptisa.com"/>
+  <ns1:parameter name="wsdlServiceElement" value="ServicioWebRiesgosService"/>
+  <ns1:typeMapping deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle="" qname="ns28:Descripcion" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" type="java:com.eptisa.ti.Descripcion" xmlns:ns28="http://ti.eptisa.com"/>
+ </ns1:service>
+ <ns1:service name="Version" provider="java:RPC">
+  <ns1:parameter name="allowedMethods" value="getVersion"/>
+  <ns1:parameter name="className" value="org.apache.axis.Version"/>
+ </ns1:service>
+ <ns1:transport name="http">
+  <ns1:requestFlow>
+   <ns1:handler type="URLMapper"/>
+   <ns1:handler type="java:org.apache.axis.handlers.http.HTTPAuthHandler"/>
+  </ns1:requestFlow>
+  <ns1:parameter name="qs:list" value="org.apache.axis.transport.http.QSListHandler"/>
+  <ns1:parameter name="qs:wsdl" value="org.apache.axis.transport.http.QSWSDLHandler"/>
+  <ns1:parameter name="qs.list" value="org.apache.axis.transport.http.QSListHandler"/>
+  <ns1:parameter name="qs.method" value="org.apache.axis.transport.http.QSMethodHandler"/>
+  <ns1:parameter name="qs:method" value="org.apache.axis.transport.http.QSMethodHandler"/>
+  <ns1:parameter name="qs.wsdl" value="org.apache.axis.transport.http.QSWSDLHandler"/>
+ </ns1:transport>
+ <ns1:transport name="local">
+  <ns1:responseFlow>
+   <ns1:handler type="LocalResponder"/>
+  </ns1:responseFlow>
+ </ns1:transport>
+</ns1:deployment>

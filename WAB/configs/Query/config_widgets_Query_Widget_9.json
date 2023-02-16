@@ -1,0 +1,1258 @@
+{
+  "hideLayersAfterWidgetClosed": false,
+  "labelTasks": "Capas",
+  "labelResults": "Resultados",
+  "showFilterLabel": false,
+  "criteiraLabel": "Query criteria",
+  "spatialFilterLabel": "Spatial filters",
+  "queries": [
+    {
+      "url": "https://dgegisprepcc.emergencias.madrid.es/cisem/rest/services/Riesgos/Riesgos/FeatureServer/2",
+      "name": "Elemento Vulnerable",
+      "icon": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      },
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "logicalOperator": "AND",
+            "parts": [
+              {
+                "fieldObj": {
+                  "name": "NOMBRE",
+                  "label": "NOMBRE",
+                  "dateFormat": "",
+                  "shortType": "string",
+                  "type": "esriFieldTypeString"
+                },
+                "operator": "stringOperatorContains",
+                "valueObj": {
+                  "isValid": true,
+                  "type": "value",
+                  "value": null
+                },
+                "interactiveObj": {
+                  "prompt": "NOMBRE contiene",
+                  "hint": "Nombre",
+                  "cascade": "none"
+                },
+                "caseSensitive": false
+              },
+              {
+                "fieldObj": {
+                  "name": "DESCRIPCION",
+                  "label": "DESCRIPCION",
+                  "dateFormat": "",
+                  "shortType": "string",
+                  "type": "esriFieldTypeString"
+                },
+                "operator": "stringOperatorContains",
+                "valueObj": {
+                  "isValid": true,
+                  "type": "value",
+                  "value": null
+                },
+                "interactiveObj": {
+                  "prompt": "DESCRIPCION contiene",
+                  "hint": "Descripción",
+                  "cascade": "none"
+                },
+                "caseSensitive": false
+              }
+            ]
+          }
+        ],
+        "expr": "",
+        "displaySQL": ""
+      },
+      "showSQL": true,
+      "spatialFilter": {
+        "currentMapExtent": null,
+        "drawing": null,
+        "useFeatures": null,
+        "fullLayerExtent": null
+      },
+      "popupInfo": {
+        "readFromWebMap": true
+      },
+      "orderByFields": [],
+      "useLayerSymbol": true,
+      "resultsSymbol": null,
+      "canModifySymbol": false,
+      "enableExport": false,
+      "defaultExpand": true,
+      "singleResultLayer": true,
+      "webMapLayerId": "Riesgos_4362",
+      "customResultName": false
+    },
+    {
+      "url": "https://dgegisprepcc.emergencias.madrid.es/cisem/rest/services/Riesgos/Riesgos/FeatureServer/1",
+      "name": "Localizaciones",
+      "icon": {
+        "color": [
+          223,
+          230,
+          32,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      },
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "logicalOperator": "AND",
+            "parts": [
+              {
+                "fieldObj": {
+                  "name": "NOMBRE",
+                  "label": "NOMBRE",
+                  "dateFormat": "",
+                  "shortType": "string",
+                  "type": "esriFieldTypeString"
+                },
+                "operator": "stringOperatorContains",
+                "valueObj": {
+                  "isValid": true,
+                  "type": "value",
+                  "value": null
+                },
+                "interactiveObj": {
+                  "prompt": "Nombre contiene",
+                  "hint": "Nombre",
+                  "cascade": "none"
+                },
+                "caseSensitive": false
+              },
+              {
+                "fieldObj": {
+                  "name": "DESCRIPCION",
+                  "label": "DESCRIPCION",
+                  "dateFormat": "",
+                  "shortType": "string",
+                  "type": "esriFieldTypeString"
+                },
+                "operator": "stringOperatorContains",
+                "valueObj": {
+                  "isValid": true,
+                  "type": "value",
+                  "value": null
+                },
+                "interactiveObj": {
+                  "prompt": "Descripción contiene",
+                  "hint": "Descripción",
+                  "cascade": "none"
+                },
+                "caseSensitive": false
+              }
+            ]
+          }
+        ],
+        "displaySQL": "",
+        "expr": ""
+      },
+      "showSQL": true,
+      "spatialFilter": {
+        "currentMapExtent": null,
+        "drawing": null,
+        "useFeatures": null,
+        "fullLayerExtent": null
+      },
+      "popupInfo": {
+        "readFromWebMap": true
+      },
+      "orderByFields": [],
+      "useLayerSymbol": true,
+      "resultsSymbol": null,
+      "canModifySymbol": false,
+      "enableExport": false,
+      "defaultExpand": true,
+      "singleResultLayer": true,
+      "webMapLayerId": "Riesgos_3187",
+      "customResultName": false
+    },
+    {
+      "url": "https://dgegisprepcc.emergencias.madrid.es/cisem/rest/services/Riesgos/Riesgos/FeatureServer/3",
+      "name": "Elemento Operacional",
+      "icon": {
+        "color": [
+          57,
+          230,
+          14,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      },
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "logicalOperator": "AND",
+            "parts": [
+              {
+                "fieldObj": {
+                  "name": "NOMBRE",
+                  "label": "NOMBRE",
+                  "dateFormat": "",
+                  "shortType": "string",
+                  "type": "esriFieldTypeString"
+                },
+                "operator": "stringOperatorContains",
+                "valueObj": {
+                  "isValid": true,
+                  "type": "value",
+                  "value": null
+                },
+                "interactiveObj": {
+                  "prompt": "NOMBRE contiene",
+                  "hint": "Nombre",
+                  "cascade": "none"
+                },
+                "caseSensitive": false
+              },
+              {
+                "fieldObj": {
+                  "name": "DIRNOMBRE",
+                  "label": "DIRNOMBRE",
+                  "dateFormat": "",
+                  "shortType": "string",
+                  "type": "esriFieldTypeString"
+                },
+                "operator": "stringOperatorContains",
+                "valueObj": {
+                  "isValid": true,
+                  "type": "value",
+                  "value": null
+                },
+                "interactiveObj": {
+                  "prompt": "DIRNOMBRE contiene",
+                  "hint": "Nombre",
+                  "cascade": "none"
+                },
+                "caseSensitive": false
+              }
+            ]
+          }
+        ],
+        "displaySQL": "",
+        "expr": ""
+      },
+      "showSQL": true,
+      "spatialFilter": {
+        "currentMapExtent": null,
+        "drawing": null,
+        "useFeatures": null,
+        "fullLayerExtent": null
+      },
+      "popupInfo": {
+        "readFromWebMap": true
+      },
+      "orderByFields": [],
+      "useLayerSymbol": false,
+      "resultsSymbol": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      },
+      "canModifySymbol": false,
+      "enableExport": false,
+      "defaultExpand": true,
+      "singleResultLayer": true,
+      "webMapLayerId": "Riesgos_2935",
+      "customResultName": false
+    },
+    {
+      "url": "https://dgegisprepcc.emergencias.madrid.es/cisem/rest/services/Riesgos/vistaDocumentoElementoVulnerabilidad/MapServer/0",
+      "name": "Documentos",
+      "icon": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      },
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "NOMBRETIPO",
+              "label": "NOMBRETIPO",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIsAnyOf",
+            "valueObj": {
+              "isValid": true,
+              "type": "multiple",
+              "value": [
+                "DPI",
+                "Otros",
+                "Plan de Distrito",
+                "Simulacro",
+                "Preplan"
+              ]
+            },
+            "interactiveObj": {
+              "prompt": "TIPO",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false,
+            "displaySQL": "UPPER(NOMBRETIPO) IN ('DPI','OTROS','PLAN DE DISTRITO','SIMULACRO','PREPLAN')",
+            "expr": "UPPER(NOMBRETIPO) IN ('DPI','OTROS','PLAN DE DISTRITO','SIMULACRO','PREPLAN')"
+          }
+        ],
+        "expr": "UPPER(NOMBRETIPO) IN ('DPI','OTROS','PLAN DE DISTRITO','SIMULACRO','PREPLAN')",
+        "displaySQL": "UPPER(NOMBRETIPO) IN ('DPI','OTROS','PLAN DE DISTRITO','SIMULACRO','PREPLAN')"
+      },
+      "showSQL": false,
+      "spatialFilter": {
+        "currentMapExtent": null,
+        "drawing": null,
+        "useFeatures": null,
+        "fullLayerExtent": null
+      },
+      "popupInfo": {
+        "title": "{NOMBRE}",
+        "fieldInfos": [
+          {
+            "fieldName": "OBJECTID",
+            "label": "OBJECTID",
+            "tooltip": "",
+            "visible": false,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "ID_ELEMENTOVULNERABLEP",
+            "label": "ID ELEMENTOVULNERABLE",
+            "tooltip": "",
+            "visible": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "ID_PLANDIRECTOR",
+            "label": "ID PLAN DIRECTOR",
+            "tooltip": "",
+            "visible": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "NOMBRE",
+            "label": "NOMBRE",
+            "tooltip": "",
+            "visible": true,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "DESCRIPCION",
+            "label": "DESCRIPCIÓN",
+            "tooltip": "",
+            "visible": true,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "DIRTIPO",
+            "label": "TIPO",
+            "tooltip": "",
+            "visible": true,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "DIRNOMBRE",
+            "label": "NOMBRE",
+            "tooltip": "",
+            "visible": true,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "DIRNUMERO",
+            "label": "NÚMERO",
+            "tooltip": "",
+            "visible": true,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "DIRCALIFICADOR",
+            "label": "CALIFICADOR",
+            "tooltip": "",
+            "visible": true,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "DIRPOBLACION",
+            "label": "POBLACIÓN",
+            "tooltip": "",
+            "visible": true,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "DISTRITO",
+            "label": "DISTRITO",
+            "tooltip": "",
+            "visible": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "FECHAINI",
+            "label": "FECHA INI",
+            "tooltip": "",
+            "visible": true,
+            "format": {
+              "dateFormat": "longMonthDayYear"
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "FECHAFIN",
+            "label": "FECHA FIN",
+            "tooltip": "",
+            "visible": true,
+            "format": {
+              "dateFormat": "longMonthDayYear"
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "UTMX",
+            "label": "UTMX",
+            "tooltip": "",
+            "visible": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "UTMY",
+            "label": "UTMY",
+            "tooltip": "",
+            "visible": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "AFORO",
+            "label": "AFORO",
+            "tooltip": "",
+            "visible": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "TELCONTACTO",
+            "label": "TlF. CONTACTO",
+            "tooltip": "",
+            "visible": true,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "ID_TIPODOCUMENTO",
+            "label": "ID_TIPODOCUMENTO",
+            "tooltip": "",
+            "visible": false,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "NOMBREDOC",
+            "label": "NOMBREDOC",
+            "tooltip": "",
+            "visible": false,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "DESCRIPCIONDOC",
+            "label": "DESCRIPCIONDOC",
+            "tooltip": "",
+            "visible": false,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "ENLACE",
+            "label": "ENLACE",
+            "tooltip": "",
+            "visible": false,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "NOMBRETIPO",
+            "label": "NOMBRETIPO",
+            "tooltip": "",
+            "visible": false,
+            "format": null,
+            "stringFieldOption": "textbox"
+          }
+        ],
+        "description": null,
+        "showAttachments": false,
+        "mediaInfos": [],
+        "readFromWebMap": false
+      },
+      "orderByFields": [],
+      "useLayerSymbol": true,
+      "resultsSymbol": null,
+      "canModifySymbol": false,
+      "enableExport": false,
+      "defaultExpand": true,
+      "singleResultLayer": true,
+      "webMapLayerId": null,
+      "customResultName": false
+    },
+    {
+      "url": "https://dgegisprepcc.emergencias.madrid.es/cisem/rest/services/Riesgos/vistaTipologiaElementoVulnerabilidad/MapServer/0",
+      "name": "Tipología",
+      "icon": {
+        "color": [
+          73,
+          73,
+          148,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      },
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "CLASE",
+              "label": "CLASE",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIsAnyOf",
+            "valueObj": {
+              "isValid": true,
+              "type": "multiple",
+              "value": [
+                "Centros esenciales",
+                "Edificios/Complejos singulares",
+                "Entornos naturales y espacios al exterior",
+                "Infraestructuras y medios de transporte",
+                "Otros",
+                "Redes de suministro y servicios basicos"
+              ]
+            },
+            "interactiveObj": {
+              "prompt": "CLASE",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false,
+            "displaySQL": "UPPER(CLASE) IN ('CENTROS ESENCIALES', 'EDIFICIOS/COMPLEJOS SINGULARES','INFRAESTRUCTURAS Y MEDIOS DE TRANSPORTE','OTROS','REDES DE SUMINISTRO Y SERVICIOS BASICOS')",
+            "expr": "UPPER(CLASE) IN ('CENTROS ESENCIALES','EDIFICIOS/COMPLEJOS SINGULARES','INFRAESTRUCTURAS Y MEDIOS DE TRANSPORTE','OTROS','REDES DE SUMINISTRO Y SERVICIOS BASICOS')"
+          },
+          {
+            "fieldObj": {
+              "name": "CATEGORIA",
+              "label": "CATEGORIA",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIsAnyOf",
+            "valueObj": {
+              "isValid": true,
+              "type": "multiple",
+              "value": [
+                "Aéreo",
+                "Carretera",
+                "Ferroviario",
+                "Red de combustibles fósiles",
+                "Red de suministro electricidad",
+                "Servicio funerario",
+                "Uso administrativo",
+                "Uso almacen e industrial",
+                "Uso aparcamiento",
+                "Uso Comercial",
+                "Uso docente",
+                "Uso hospitalario/sanitario",
+                "Uso pública concurrencia",
+                "Uso residencial público",
+                "Uso vivienda"
+              ]
+            },
+            "interactiveObj": {
+              "prompt": "CATEGORIA",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false,
+            "displaySQL": "UPPER(CATEGORIA) IN ('AÉREO','CARRETERA','FERROVIARIO','RED DE COMBUSTIBLES FÓSILES','RED DE SUMINISTRO ELECTRICIDAD','SERVICIO FUNERARIO','USO ADMINISTRATIVO','USO ALMACEN E INDUSTRIAL','USO APARCAMIENTO','USO COMERCIAL','USO DOCENTE','USO HOSPITALARIO/SANITARIO','USO PÚBLICA CONCURRENCIA','USO RESIDENCIAL PÚBLICO','USO VIVIENDA')",
+            "expr": "UPPER(CATEGORIA) IN ('AÉREO','CARRETERA','FERROVIARIO','RED DE COMBUSTIBLES FÓSILES','RED DE SUMINISTRO ELECTRICIDAD','SERVICIO FUNERARIO','USO ADMINISTRATIVO','USO ALMACEN E INDUSTRIAL','USO APARCAMIENTO','USO COMERCIAL','USO DOCENTE','USO HOSPITALARIO/SANITARIO','USO PÚBLICA CONCURRENCIA','USO RESIDENCIAL PÚBLICO','USO VIVIENDA')"
+          },
+          {
+            "fieldObj": {
+              "name": "SUBCATEGORIA",
+              "label": "SUBCATEGORIA",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIsAnyOf",
+            "valueObj": {
+              "isValid": true,
+              "type": "multiple",
+              "value": [
+                "Aeropuerto",
+                "Albergue y centro de acogida",
+                "Aparcamientos robotizados",
+                "Auditorios y teatros",
+                "Campus universitario o universidad",
+                "Cementerios/tanatorios",
+                "Centro comercial (Gran superficie)",
+                "Centro de día, de mayores y sociales",
+                "Centro ocupacional",
+                "Centros culturales",
+                "Subestaciones principales",
+                "Residencia mayores",
+                "Red de túneles",
+                "Red de metro",
+                "Red de ferrocarril",
+                "Otros",
+                "Oficina",
+                "Museos y centros de ferias, congresos y exposiciones",
+                "Intercambiadores de transporte",
+                "Instituto",
+                "Hotel",
+                "Hospital",
+                "Grandes industrias o almacenes",
+                "Grandes aparcamientos públicos/privados",
+                "Estaciones de servicio",
+                "Edificio vivienda",
+                "Edificio oficinas",
+                "Edificio institucional administración estado, autonómica, local",
+                "Complejo empresarial",
+                "Colegio Mayor",
+                "Colegio",
+                "Centros de eventos deportivos y de espectáculos",
+                "Centros de culto"
+              ]
+            },
+            "interactiveObj": {
+              "prompt": "SUBCATEGORIA",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false,
+            "displaySQL": "UPPER(SUBCATEGORIA) IN ('AEROPUERTO','ALBERGUE Y CENTRO DE ACOGIDA','APARCAMIENTOS ROBOTIZADOS','AUDITORIOS Y TEATROS','CAMPUS UNIVERSITARIO O UNIVERSIDAD','CEMENTERIOS/TANATORIOS','CENTRO COMERCIAL (GRAN SUPERFICIE)','CENTRO DE DÍA, DE MAYORES Y SOCIALES','CENTRO OCUPACIONAL','CENTROS CULTURALES','SUBESTACIONES PRINCIPALES','RESIDENCIA MAYORES','RED DE TÚNELES','RED DE METRO','RED DE FERROCARRIL','OTROS','OFICINA','MUSEOS Y CENTROS DE FERIAS, CONGRESOS Y EXPOSICIONES','INTERCAMBIADORES DE TRANSPORTE','INSTITUTO','HOTEL','HOSPITAL','GRANDES INDUSTRIAS O ALMACENES','GRANDES APARCAMIENTOS PÚBLICOS/PRIVADOS','ESTACIONES DE SERVICIO','EDIFICIO VIVIENDA','EDIFICIO OFICINAS','EDIFICIO INSTITUCIONAL ADMINISTRACIÓN ESTADO, AUTONÓMICA, LOCAL','COMPLEJO EMPRESARIAL','COLEGIO MAYOR','COLEGIO','CENTROS DE EVENTOS DEPORTIVOS Y DE ESPECTÁCULOS','CENTROS DE CULTO')",
+            "expr": "UPPER(SUBCATEGORIA) IN ('AEROPUERTO','ALBERGUE Y CENTRO DE ACOGIDA','APARCAMIENTOS ROBOTIZADOS','AUDITORIOS Y TEATROS','CAMPUS UNIVERSITARIO O UNIVERSIDAD','CEMENTERIOS/TANATORIOS','CENTRO COMERCIAL (GRAN SUPERFICIE)','CENTRO DE DÍA, DE MAYORES Y SOCIALES','CENTRO OCUPACIONAL','CENTROS CULTURALES','SUBESTACIONES PRINCIPALES','RESIDENCIA MAYORES','RED DE TÚNELES','RED DE METRO','RED DE FERROCARRIL','OTROS','OFICINA','MUSEOS Y CENTROS DE FERIAS, CONGRESOS Y EXPOSICIONES','INTERCAMBIADORES DE TRANSPORTE','INSTITUTO','HOTEL','HOSPITAL','GRANDES INDUSTRIAS O ALMACENES','GRANDES APARCAMIENTOS PÚBLICOS/PRIVADOS','ESTACIONES DE SERVICIO','EDIFICIO VIVIENDA','EDIFICIO OFICINAS','EDIFICIO INSTITUCIONAL ADMINISTRACIÓN ESTADO, AUTONÓMICA, LOCAL','COMPLEJO EMPRESARIAL','COLEGIO MAYOR','COLEGIO','CENTROS DE EVENTOS DEPORTIVOS Y DE ESPECTÁCULOS','CENTROS DE CULTO')"
+          }
+        ],
+        "expr": "(UPPER(CLASE) IN ('EDIFICIOS/COMPLEJOS SINGULARES','INFRAESTRUCTURAS Y MEDIOS DE TRANSPORTE','REDES DE SUMINISTRO Y SERVICIOS BASICOS')) AND (UPPER(CATEGORIA) IN ('AÉREO','CARRETERA','FERROVIARIO','RED DE COMBUSTIBLES FÓSILES','RED DE SUMINISTRO ELECTRICIDAD','SERVICIO FUNERARIO','USO ADMINISTRATIVO','USO ALMACEN E INDUSTRIAL','USO APARCAMIENTO','USO COMERCIAL','USO DOCENTE','USO HOSPITALARIO/SANITARIO','USO PÚBLICA CONCURRENCIA','USO RESIDENCIAL PÚBLICO','USO VIVIENDA')) AND (UPPER(SUBCATEGORIA) IN ('AEROPUERTO','ALBERGUE Y CENTRO DE ACOGIDA','APARCAMIENTOS ROBOTIZADOS','AUDITORIOS Y TEATROS','CAMPUS UNIVERSITARIO O UNIVERSIDAD','CEMENTERIOS/TANATORIOS','CENTRO COMERCIAL (GRAN SUPERFICIE)','CENTRO DE DÍA, DE MAYORES Y SOCIALES','CENTRO OCUPACIONAL','CENTROS CULTURALES','SUBESTACIONES PRINCIPALES','RESIDENCIA MAYORES','RED DE TÚNELES','RED DE METRO','RED DE FERROCARRIL','OTROS','OFICINA','MUSEOS Y CENTROS DE FERIAS, CONGRESOS Y EXPOSICIONES','INTERCAMBIADORES DE TRANSPORTE','INSTITUTO','HOTEL','HOSPITAL','GRANDES INDUSTRIAS O ALMACENES','GRANDES APARCAMIENTOS PÚBLICOS/PRIVADOS','ESTACIONES DE SERVICIO','EDIFICIO VIVIENDA','EDIFICIO OFICINAS','EDIFICIO INSTITUCIONAL ADMINISTRACIÓN ESTADO, AUTONÓMICA, LOCAL','COMPLEJO EMPRESARIAL','COLEGIO MAYOR','COLEGIO','CENTROS DE EVENTOS DEPORTIVOS Y DE ESPECTÁCULOS','CENTROS DE CULTO'))",
+        "displaySQL": "(UPPER(CLASE) IN ('EDIFICIOS/COMPLEJOS SINGULARES','INFRAESTRUCTURAS Y MEDIOS DE TRANSPORTE','REDES DE SUMINISTRO Y SERVICIOS BASICOS')) AND (UPPER(CATEGORIA) IN ('AÉREO','CARRETERA','FERROVIARIO','RED DE COMBUSTIBLES FÓSILES','RED DE SUMINISTRO ELECTRICIDAD','SERVICIO FUNERARIO','USO ADMINISTRATIVO','USO ALMACEN E INDUSTRIAL','USO APARCAMIENTO','USO COMERCIAL','USO DOCENTE','USO HOSPITALARIO/SANITARIO','USO PÚBLICA CONCURRENCIA','USO RESIDENCIAL PÚBLICO','USO VIVIENDA')) AND (UPPER(SUBCATEGORIA) IN ('AEROPUERTO','ALBERGUE Y CENTRO DE ACOGIDA','APARCAMIENTOS ROBOTIZADOS','AUDITORIOS Y TEATROS','CAMPUS UNIVERSITARIO O UNIVERSIDAD','CEMENTERIOS/TANATORIOS','CENTRO COMERCIAL (GRAN SUPERFICIE)','CENTRO DE DÍA, DE MAYORES Y SOCIALES','CENTRO OCUPACIONAL','CENTROS CULTURALES','SUBESTACIONES PRINCIPALES','RESIDENCIA MAYORES','RED DE TÚNELES','RED DE METRO','RED DE FERROCARRIL','OTROS','OFICINA','MUSEOS Y CENTROS DE FERIAS, CONGRESOS Y EXPOSICIONES','INTERCAMBIADORES DE TRANSPORTE','INSTITUTO','HOTEL','HOSPITAL','GRANDES INDUSTRIAS O ALMACENES','GRANDES APARCAMIENTOS PÚBLICOS/PRIVADOS','ESTACIONES DE SERVICIO','EDIFICIO VIVIENDA','EDIFICIO OFICINAS','EDIFICIO INSTITUCIONAL ADMINISTRACIÓN ESTADO, AUTONÓMICA, LOCAL','COMPLEJO EMPRESARIAL','COLEGIO MAYOR','COLEGIO','CENTROS DE EVENTOS DEPORTIVOS Y DE ESPECTÁCULOS','CENTROS DE CULTO'))"
+      },
+      "showSQL": false,
+      "spatialFilter": {
+        "currentMapExtent": null,
+        "drawing": null,
+        "useFeatures": null,
+        "fullLayerExtent": null
+      },
+      "popupInfo": {
+        "title": "{NOMBRE}",
+        "fieldInfos": [
+          {
+            "fieldName": "OBJECTID",
+            "label": "OBJECTID",
+            "tooltip": "",
+            "visible": false,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "ID_ELEMENTOVULNERABLEP",
+            "label": "ID ELEMENTOVULNERABLEP",
+            "tooltip": "",
+            "visible": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "ID_PLANDIRECTOR",
+            "label": "ID PLANDIRECTOR",
+            "tooltip": "",
+            "visible": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "NOMBRE",
+            "label": "NOMBRE",
+            "tooltip": "",
+            "visible": true,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "DESCRIPCION",
+            "label": "DESCRIPCIÓN",
+            "tooltip": "",
+            "visible": true,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "DIRTIPO",
+            "label": "TIPO VÍA",
+            "tooltip": "",
+            "visible": true,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "DIRNOMBRE",
+            "label": "NOMBRE VÍA",
+            "tooltip": "",
+            "visible": true,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "DIRNUMERO",
+            "label": "NÚMERO VÍA",
+            "tooltip": "",
+            "visible": true,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "DIRCALIFICADOR",
+            "label": "ALIFICADOR",
+            "tooltip": "",
+            "visible": true,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "DIRPOBLACION",
+            "label": "POBLACIÓN",
+            "tooltip": "",
+            "visible": true,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "DISTRITO",
+            "label": "DISTRITO",
+            "tooltip": "",
+            "visible": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "FECHAINI",
+            "label": "FECHA INI",
+            "tooltip": "",
+            "visible": true,
+            "format": {
+              "dateFormat": "longMonthDayYear"
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "FECHAFIN",
+            "label": "FECHA FIN",
+            "tooltip": "",
+            "visible": true,
+            "format": {
+              "dateFormat": "longMonthDayYear"
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "UTMX",
+            "label": "UTMX",
+            "tooltip": "",
+            "visible": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "UTMY",
+            "label": "UTMY",
+            "tooltip": "",
+            "visible": true,
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "AFORO",
+            "label": "AFORO",
+            "tooltip": "",
+            "visible": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "TELCONTACTO",
+            "label": "TELCONTACTO",
+            "tooltip": "",
+            "visible": true,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "CLASE",
+            "label": "CLASE",
+            "tooltip": "",
+            "visible": true,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "CATEGORIA",
+            "label": "CATEGORIA",
+            "tooltip": "",
+            "visible": true,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "SUBCATEGORIA",
+            "label": "SUBCATEGORIA",
+            "tooltip": "",
+            "visible": true,
+            "format": null,
+            "stringFieldOption": "textbox"
+          }
+        ],
+        "description": null,
+        "showAttachments": false,
+        "mediaInfos": [],
+        "readFromWebMap": false
+      },
+      "orderByFields": [],
+      "useLayerSymbol": true,
+      "resultsSymbol": null,
+      "canModifySymbol": false,
+      "enableExport": false,
+      "defaultExpand": true,
+      "singleResultLayer": true,
+      "webMapLayerId": null,
+      "customResultName": false
+    },
+    {
+      "url": "https://dgegisprepcc.emergencias.madrid.es/cisem/rest/services/Riesgos/vistaFactorElementoVulnerabilidad/MapServer/0",
+      "name": "Factores",
+      "icon": {
+        "color": [
+          58,
+          124,
+          52,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      },
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "TIPOFACTOR",
+              "label": "TIPO FACTOR",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIsAnyOf",
+            "valueObj": {
+              "isValid": true,
+              "type": "multiple",
+              "value": [
+                "Actividad/Uso sensible",
+                "Altura edificación",
+                "BIC",
+                "Infraestructura de transporte",
+                "Ocupación/Aforo",
+                "Presencia de riesgos especiales",
+                "Suministro o servicio básico de la ciudad"
+              ]
+            },
+            "interactiveObj": {
+              "prompt": "TIPO FACTOR",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false,
+            "displaySQL": "UPPER(TIPOFACTOR) IN ('ACTIVIDAD/USO SENSIBLE','ALTURA EDIFICACIÓN','BIC','INFRAESTRUCTURA DE TRANSPORTE','OCUPACIÓN/AFORO','PRESENCIA DE RIESGOS ESPECIALES','SUMINISTRO O SERVICIO BÁSICO DE LA CIUDAD')",
+            "expr": "UPPER(TIPOFACTOR) IN ('ACTIVIDAD/USO SENSIBLE','ALTURA EDIFICACIÓN','BIC','INFRAESTRUCTURA DE TRANSPORTE','OCUPACIÓN/AFORO','PRESENCIA DE RIESGOS ESPECIALES','SUMINISTRO O SERVICIO BÁSICO DE LA CIUDAD')"
+          }
+        ],
+        "displaySQL": "UPPER(TIPOFACTOR) IN ('ACTIVIDAD/USO SENSIBLE','ALTURA EDIFICACIÓN','BIC','INFRAESTRUCTURA DE TRANSPORTE','OCUPACIÓN/AFORO','PRESENCIA DE RIESGOS ESPECIALES','SUMINISTRO O SERVICIO BÁSICO DE LA CIUDAD')",
+        "expr": "UPPER(TIPOFACTOR) IN ('ACTIVIDAD/USO SENSIBLE','ALTURA EDIFICACIÓN','BIC','INFRAESTRUCTURA DE TRANSPORTE','OCUPACIÓN/AFORO','PRESENCIA DE RIESGOS ESPECIALES','SUMINISTRO O SERVICIO BÁSICO DE LA CIUDAD')"
+      },
+      "showSQL": false,
+      "spatialFilter": {
+        "currentMapExtent": null,
+        "drawing": null,
+        "useFeatures": null,
+        "fullLayerExtent": null
+      },
+      "popupInfo": {
+        "title": "{NOMBRE}",
+        "fieldInfos": [
+          {
+            "fieldName": "OBJECTID",
+            "label": "OBJECTID",
+            "tooltip": "",
+            "visible": false,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "ID_ELEMENTOVULNERABLEP",
+            "label": "ID ELEMENTOVULNERABLE PUNTO",
+            "tooltip": "",
+            "visible": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": false
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "ID_PLANDIRECTOR",
+            "label": "ID PLANDIRECTOR",
+            "tooltip": "",
+            "visible": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": false
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "NOMBRE",
+            "label": "NOMBRE",
+            "tooltip": "",
+            "visible": true,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "DESCRIPCION",
+            "label": "DESCRIPCION",
+            "tooltip": "",
+            "visible": true,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "DIRTIPO",
+            "label": "TIPO",
+            "tooltip": "",
+            "visible": true,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "DIRNOMBRE",
+            "label": "NOMBRE VÍA",
+            "tooltip": "",
+            "visible": true,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "DIRNUMERO",
+            "label": "NÚMERO VÍA",
+            "tooltip": "",
+            "visible": true,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "DIRCALIFICADOR",
+            "label": "CALIFICADOR",
+            "tooltip": "",
+            "visible": true,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "DIRPOBLACION",
+            "label": "POBLACIÓN",
+            "tooltip": "",
+            "visible": true,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "DISTRITO",
+            "label": "DISTRITO",
+            "tooltip": "",
+            "visible": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": false
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "FECHAINI",
+            "label": "FECHA INI",
+            "tooltip": "",
+            "visible": true,
+            "format": {
+              "dateFormat": "longMonthDayYear"
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "FECHAFIN",
+            "label": "FECHA FIN",
+            "tooltip": "",
+            "visible": true,
+            "format": {
+              "dateFormat": "longMonthDayYear"
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "UTMX",
+            "label": "UTMX",
+            "tooltip": "",
+            "visible": true,
+            "format": {
+              "places": 4,
+              "digitSeparator": false
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "UTMY",
+            "label": "UTMY",
+            "tooltip": "",
+            "visible": true,
+            "format": {
+              "places": 4,
+              "digitSeparator": false
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "AFORO",
+            "label": "AFORO",
+            "tooltip": "",
+            "visible": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": false
+            },
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "TELCONTACTO",
+            "label": "TELCONTACTO",
+            "tooltip": "",
+            "visible": true,
+            "format": null,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "TIPOFACTOR",
+            "label": "TIPO FACTOR",
+            "tooltip": "",
+            "visible": false,
+            "format": null,
+            "stringFieldOption": "textbox"
+          }
+        ],
+        "description": null,
+        "showAttachments": false,
+        "mediaInfos": [],
+        "readFromWebMap": false
+      },
+      "orderByFields": [],
+      "useLayerSymbol": true,
+      "resultsSymbol": null,
+      "canModifySymbol": false,
+      "enableExport": false,
+      "defaultExpand": true,
+      "singleResultLayer": true,
+      "webMapLayerId": null,
+      "customResultName": false
+    }
+  ]
+}

@@ -1,0 +1,1035 @@
+{
+  "basemapGallery": {
+    "mode": 2,
+    "basemaps": [
+      {
+        "thumbnailUrl": "${appPath}/configs/BasemapGallery/thumbnailUrl1620640804224.png",
+        "title": "Mapa Base Municipal ETRS89",
+        "layers": [
+          {
+            "id": "MapaBaseETRS89_6349",
+            "layerType": "ArcGISTiledMapServiceLayer",
+            "url": "https://dgegisprepcc.emergencias.madrid.es/cisem/rest/services/MapaBaseETRS89/MapServer",
+            "visibility": true,
+            "opacity": 1,
+            "title": "MapaBaseETRS89",
+            "serviceInfoResponse": {
+              "currentVersion": 10.71,
+              "serviceDescription": "",
+              "mapName": "Layers",
+              "description": "",
+              "copyrightText": "",
+              "supportsDynamicLayers": true,
+              "layers": [
+                {
+                  "id": 0,
+                  "name": "Anotaciones de barrios 0",
+                  "parentLayerId": -1,
+                  "defaultVisibility": true,
+                  "subLayerIds": [
+                    1
+                  ],
+                  "minScale": 50000,
+                  "maxScale": 50000,
+                  "type": "Annotation Layer",
+                  "geometryType": "esriGeometryPolygon"
+                },
+                {
+                  "id": 1,
+                  "name": "Default",
+                  "parentLayerId": 0,
+                  "defaultVisibility": true,
+                  "subLayerIds": null,
+                  "minScale": 0,
+                  "maxScale": 0
+                },
+                {
+                  "id": 2,
+                  "name": "Anotaciones de barrios 1",
+                  "parentLayerId": -1,
+                  "defaultVisibility": true,
+                  "subLayerIds": [
+                    3
+                  ],
+                  "minScale": 25000,
+                  "maxScale": 25000,
+                  "type": "Annotation Layer",
+                  "geometryType": "esriGeometryPolygon"
+                },
+                {
+                  "id": 3,
+                  "name": "Default",
+                  "parentLayerId": 2,
+                  "defaultVisibility": true,
+                  "subLayerIds": null,
+                  "minScale": 0,
+                  "maxScale": 0
+                },
+                {
+                  "id": 4,
+                  "name": "Anotaciones de barrios 2",
+                  "parentLayerId": -1,
+                  "defaultVisibility": true,
+                  "subLayerIds": [
+                    5
+                  ],
+                  "minScale": 10000,
+                  "maxScale": 10000,
+                  "type": "Annotation Layer",
+                  "geometryType": "esriGeometryPolygon"
+                },
+                {
+                  "id": 5,
+                  "name": "Default",
+                  "parentLayerId": 4,
+                  "defaultVisibility": true,
+                  "subLayerIds": null,
+                  "minScale": 0,
+                  "maxScale": 0
+                },
+                {
+                  "id": 6,
+                  "name": "Anotaciones de distritos 0",
+                  "parentLayerId": -1,
+                  "defaultVisibility": true,
+                  "subLayerIds": [
+                    7
+                  ],
+                  "minScale": 250000,
+                  "maxScale": 250000,
+                  "type": "Annotation Layer",
+                  "geometryType": "esriGeometryPolygon"
+                },
+                {
+                  "id": 7,
+                  "name": "Default",
+                  "parentLayerId": 6,
+                  "defaultVisibility": true,
+                  "subLayerIds": null,
+                  "minScale": 0,
+                  "maxScale": 50000
+                },
+                {
+                  "id": 8,
+                  "name": "Anotaciones de distritos 1",
+                  "parentLayerId": -1,
+                  "defaultVisibility": true,
+                  "subLayerIds": [
+                    9
+                  ],
+                  "minScale": 100000,
+                  "maxScale": 100000,
+                  "type": "Annotation Layer",
+                  "geometryType": "esriGeometryPolygon"
+                },
+                {
+                  "id": 9,
+                  "name": "Default",
+                  "parentLayerId": 8,
+                  "defaultVisibility": true,
+                  "subLayerIds": null,
+                  "minScale": 0,
+                  "maxScale": 50000
+                },
+                {
+                  "id": 10,
+                  "name": "Cercanias",
+                  "parentLayerId": -1,
+                  "defaultVisibility": true,
+                  "subLayerIds": null,
+                  "minScale": 1999,
+                  "maxScale": 500,
+                  "type": "Feature Layer",
+                  "geometryType": "esriGeometryPoint"
+                },
+                {
+                  "id": 11,
+                  "name": "Paradas de metro",
+                  "parentLayerId": -1,
+                  "defaultVisibility": true,
+                  "subLayerIds": null,
+                  "minScale": 1999,
+                  "maxScale": 500,
+                  "type": "Feature Layer",
+                  "geometryType": "esriGeometryPoint"
+                },
+                {
+                  "id": 12,
+                  "name": "Paradas de autobús",
+                  "parentLayerId": -1,
+                  "defaultVisibility": true,
+                  "subLayerIds": null,
+                  "minScale": 1999,
+                  "maxScale": 500,
+                  "type": "Feature Layer",
+                  "geometryType": "esriGeometryPoint"
+                },
+                {
+                  "id": 13,
+                  "name": "Números de portales",
+                  "parentLayerId": -1,
+                  "defaultVisibility": true,
+                  "subLayerIds": null,
+                  "minScale": 1999,
+                  "maxScale": 500,
+                  "type": "Feature Layer",
+                  "geometryType": "esriGeometryPoint"
+                },
+                {
+                  "id": 14,
+                  "name": "Alturas de edificios",
+                  "parentLayerId": -1,
+                  "defaultVisibility": true,
+                  "subLayerIds": null,
+                  "minScale": 999,
+                  "maxScale": 500,
+                  "type": "Feature Layer",
+                  "geometryType": "esriGeometryPoint"
+                },
+                {
+                  "id": 15,
+                  "name": "Carreteras rotulación",
+                  "parentLayerId": -1,
+                  "defaultVisibility": true,
+                  "subLayerIds": null,
+                  "minScale": 25000,
+                  "maxScale": 500,
+                  "type": "Feature Layer",
+                  "geometryType": "esriGeometryPolyline"
+                },
+                {
+                  "id": 16,
+                  "name": "Rotulaciones 1:10.000",
+                  "parentLayerId": -1,
+                  "defaultVisibility": true,
+                  "subLayerIds": [
+                    17,
+                    18
+                  ],
+                  "minScale": 10000,
+                  "maxScale": 10000,
+                  "type": "Group Layer"
+                },
+                {
+                  "id": 17,
+                  "name": "Viales",
+                  "parentLayerId": 16,
+                  "defaultVisibility": true,
+                  "subLayerIds": null,
+                  "minScale": 0,
+                  "maxScale": 0,
+                  "type": "Feature Layer",
+                  "geometryType": "esriGeometryPolyline"
+                },
+                {
+                  "id": 18,
+                  "name": "Topónimos",
+                  "parentLayerId": 16,
+                  "defaultVisibility": true,
+                  "subLayerIds": null,
+                  "minScale": 0,
+                  "maxScale": 0,
+                  "type": "Feature Layer",
+                  "geometryType": "esriGeometryPolyline"
+                },
+                {
+                  "id": 19,
+                  "name": "Rotulaciones 1:5.000",
+                  "parentLayerId": -1,
+                  "defaultVisibility": true,
+                  "subLayerIds": [
+                    20,
+                    21
+                  ],
+                  "minScale": 5000,
+                  "maxScale": 5000,
+                  "type": "Group Layer"
+                },
+                {
+                  "id": 20,
+                  "name": "Viales",
+                  "parentLayerId": 19,
+                  "defaultVisibility": true,
+                  "subLayerIds": null,
+                  "minScale": 0,
+                  "maxScale": 0,
+                  "type": "Feature Layer",
+                  "geometryType": "esriGeometryPolyline"
+                },
+                {
+                  "id": 21,
+                  "name": "Topónimos",
+                  "parentLayerId": 19,
+                  "defaultVisibility": true,
+                  "subLayerIds": null,
+                  "minScale": 0,
+                  "maxScale": 0,
+                  "type": "Feature Layer",
+                  "geometryType": "esriGeometryPolyline"
+                },
+                {
+                  "id": 22,
+                  "name": "Rotulaciones 1:2.500",
+                  "parentLayerId": -1,
+                  "defaultVisibility": true,
+                  "subLayerIds": [
+                    23,
+                    24
+                  ],
+                  "minScale": 2500,
+                  "maxScale": 2500,
+                  "type": "Group Layer"
+                },
+                {
+                  "id": 23,
+                  "name": "Viales",
+                  "parentLayerId": 22,
+                  "defaultVisibility": true,
+                  "subLayerIds": null,
+                  "minScale": 0,
+                  "maxScale": 0,
+                  "type": "Feature Layer",
+                  "geometryType": "esriGeometryPolyline"
+                },
+                {
+                  "id": 24,
+                  "name": "Topónimos",
+                  "parentLayerId": 22,
+                  "defaultVisibility": true,
+                  "subLayerIds": null,
+                  "minScale": 0,
+                  "maxScale": 0,
+                  "type": "Feature Layer",
+                  "geometryType": "esriGeometryPolyline"
+                },
+                {
+                  "id": 25,
+                  "name": "Rotulaciones 1:1.000",
+                  "parentLayerId": -1,
+                  "defaultVisibility": true,
+                  "subLayerIds": [
+                    26,
+                    27
+                  ],
+                  "minScale": 1000,
+                  "maxScale": 1000,
+                  "type": "Group Layer"
+                },
+                {
+                  "id": 26,
+                  "name": "Viales",
+                  "parentLayerId": 25,
+                  "defaultVisibility": true,
+                  "subLayerIds": null,
+                  "minScale": 0,
+                  "maxScale": 0,
+                  "type": "Feature Layer",
+                  "geometryType": "esriGeometryPolyline"
+                },
+                {
+                  "id": 27,
+                  "name": "Topónimos",
+                  "parentLayerId": 25,
+                  "defaultVisibility": true,
+                  "subLayerIds": null,
+                  "minScale": 0,
+                  "maxScale": 0,
+                  "type": "Feature Layer",
+                  "geometryType": "esriGeometryPolyline"
+                },
+                {
+                  "id": 28,
+                  "name": "Rotulaciones 1:500",
+                  "parentLayerId": -1,
+                  "defaultVisibility": true,
+                  "subLayerIds": [
+                    29,
+                    30
+                  ],
+                  "minScale": 500,
+                  "maxScale": 500,
+                  "type": "Group Layer"
+                },
+                {
+                  "id": 29,
+                  "name": "Viales",
+                  "parentLayerId": 28,
+                  "defaultVisibility": true,
+                  "subLayerIds": null,
+                  "minScale": 0,
+                  "maxScale": 0,
+                  "type": "Feature Layer",
+                  "geometryType": "esriGeometryPolyline"
+                },
+                {
+                  "id": 30,
+                  "name": "Topónimos",
+                  "parentLayerId": 28,
+                  "defaultVisibility": true,
+                  "subLayerIds": null,
+                  "minScale": 0,
+                  "maxScale": 0,
+                  "type": "Feature Layer",
+                  "geometryType": "esriGeometryPolyline"
+                },
+                {
+                  "id": 31,
+                  "name": "Puntos Kilométricos",
+                  "parentLayerId": -1,
+                  "defaultVisibility": true,
+                  "subLayerIds": null,
+                  "minScale": 25000,
+                  "maxScale": 500,
+                  "type": "Feature Layer",
+                  "geometryType": "esriGeometryPoint"
+                },
+                {
+                  "id": 32,
+                  "name": "Callejero>50",
+                  "parentLayerId": -1,
+                  "defaultVisibility": true,
+                  "subLayerIds": null,
+                  "minScale": 1000,
+                  "maxScale": 500,
+                  "type": "Feature Layer",
+                  "geometryType": "esriGeometryPolyline"
+                },
+                {
+                  "id": 33,
+                  "name": "Callejero<50",
+                  "parentLayerId": -1,
+                  "defaultVisibility": true,
+                  "subLayerIds": null,
+                  "minScale": 1000,
+                  "maxScale": 500,
+                  "type": "Feature Layer",
+                  "geometryType": "esriGeometryPolyline"
+                },
+                {
+                  "id": 34,
+                  "name": "Ferrocarril",
+                  "parentLayerId": -1,
+                  "defaultVisibility": true,
+                  "subLayerIds": null,
+                  "minScale": 25000,
+                  "maxScale": 500,
+                  "type": "Feature Layer",
+                  "geometryType": "esriGeometryPolyline"
+                },
+                {
+                  "id": 35,
+                  "name": "Carreteras",
+                  "parentLayerId": -1,
+                  "defaultVisibility": true,
+                  "subLayerIds": null,
+                  "minScale": 25000,
+                  "maxScale": 500,
+                  "type": "Feature Layer",
+                  "geometryType": "esriGeometryPolyline"
+                },
+                {
+                  "id": 36,
+                  "name": "Túneles",
+                  "parentLayerId": -1,
+                  "defaultVisibility": true,
+                  "subLayerIds": null,
+                  "minScale": 25000,
+                  "maxScale": 500,
+                  "type": "Feature Layer",
+                  "geometryType": "esriGeometryPolyline"
+                },
+                {
+                  "id": 37,
+                  "name": "Líneas de viales",
+                  "parentLayerId": -1,
+                  "defaultVisibility": true,
+                  "subLayerIds": null,
+                  "minScale": 25000,
+                  "maxScale": 500,
+                  "type": "Feature Layer",
+                  "geometryType": "esriGeometryPolyline"
+                },
+                {
+                  "id": 38,
+                  "name": "Distritos transparentes",
+                  "parentLayerId": -1,
+                  "defaultVisibility": true,
+                  "subLayerIds": null,
+                  "minScale": 25000,
+                  "maxScale": 10000,
+                  "type": "Feature Layer",
+                  "geometryType": "esriGeometryPolygon"
+                },
+                {
+                  "id": 39,
+                  "name": "Edificios oficiales",
+                  "parentLayerId": -1,
+                  "defaultVisibility": true,
+                  "subLayerIds": null,
+                  "minScale": 25000,
+                  "maxScale": 500,
+                  "type": "Feature Layer",
+                  "geometryType": "esriGeometryPolygon"
+                },
+                {
+                  "id": 40,
+                  "name": "Edificios",
+                  "parentLayerId": -1,
+                  "defaultVisibility": true,
+                  "subLayerIds": null,
+                  "minScale": 1999,
+                  "maxScale": 500,
+                  "type": "Feature Layer",
+                  "geometryType": "esriGeometryPolygon"
+                },
+                {
+                  "id": 41,
+                  "name": "Canalizaciones ",
+                  "parentLayerId": -1,
+                  "defaultVisibility": true,
+                  "subLayerIds": null,
+                  "minScale": 25000,
+                  "maxScale": 500,
+                  "type": "Feature Layer",
+                  "geometryType": "esriGeometryPolygon"
+                },
+                {
+                  "id": 42,
+                  "name": "Jardines",
+                  "parentLayerId": -1,
+                  "defaultVisibility": true,
+                  "subLayerIds": null,
+                  "minScale": 25000,
+                  "maxScale": 500,
+                  "type": "Feature Layer",
+                  "geometryType": "esriGeometryPolygon"
+                },
+                {
+                  "id": 43,
+                  "name": "Aceras",
+                  "parentLayerId": -1,
+                  "defaultVisibility": true,
+                  "subLayerIds": null,
+                  "minScale": 9999,
+                  "maxScale": 500,
+                  "type": "Feature Layer",
+                  "geometryType": "esriGeometryPolygon"
+                },
+                {
+                  "id": 44,
+                  "name": "Parcelas",
+                  "parentLayerId": -1,
+                  "defaultVisibility": true,
+                  "subLayerIds": null,
+                  "minScale": 5000,
+                  "maxScale": 500,
+                  "type": "Feature Layer",
+                  "geometryType": "esriGeometryPolygon"
+                },
+                {
+                  "id": 45,
+                  "name": "Hidrografía",
+                  "parentLayerId": -1,
+                  "defaultVisibility": true,
+                  "subLayerIds": null,
+                  "minScale": 25000,
+                  "maxScale": 500,
+                  "type": "Feature Layer",
+                  "geometryType": "esriGeometryPolygon"
+                },
+                {
+                  "id": 46,
+                  "name": "Manzanas",
+                  "parentLayerId": -1,
+                  "defaultVisibility": true,
+                  "subLayerIds": null,
+                  "minScale": 25000,
+                  "maxScale": 500,
+                  "type": "Feature Layer",
+                  "geometryType": "esriGeometryPolygon"
+                },
+                {
+                  "id": 47,
+                  "name": "Barrios",
+                  "parentLayerId": -1,
+                  "defaultVisibility": true,
+                  "subLayerIds": null,
+                  "minScale": 50000,
+                  "maxScale": 5000,
+                  "type": "Feature Layer",
+                  "geometryType": "esriGeometryPolygon"
+                },
+                {
+                  "id": 48,
+                  "name": "Distritos",
+                  "parentLayerId": -1,
+                  "defaultVisibility": true,
+                  "subLayerIds": null,
+                  "minScale": 250000,
+                  "maxScale": 50000,
+                  "type": "Feature Layer",
+                  "geometryType": "esriGeometryPolygon"
+                },
+                {
+                  "id": 49,
+                  "name": "Fondo blanco",
+                  "parentLayerId": -1,
+                  "defaultVisibility": true,
+                  "subLayerIds": null,
+                  "minScale": 3000000,
+                  "maxScale": 50000,
+                  "type": "Feature Layer",
+                  "geometryType": "esriGeometryPolygon"
+                }
+              ],
+              "tables": [],
+              "spatialReference": {
+                "wkid": 25830,
+                "latestWkid": 25830
+              },
+              "singleFusedMapCache": true,
+              "tileInfo": {
+                "rows": 256,
+                "cols": 256,
+                "dpi": 96,
+                "format": "PNG24",
+                "compressionQuality": 0,
+                "origin": {
+                  "x": -5120900,
+                  "y": 9998100
+                },
+                "spatialReference": {
+                  "wkid": 25830,
+                  "latestWkid": 25830
+                },
+                "lods": [
+                  {
+                    "level": 0,
+                    "resolution": 66.1459656252646,
+                    "scale": 250000
+                  },
+                  {
+                    "level": 1,
+                    "resolution": 26.458386250105836,
+                    "scale": 100000
+                  },
+                  {
+                    "level": 2,
+                    "resolution": 13.229193125052918,
+                    "scale": 50000
+                  },
+                  {
+                    "level": 3,
+                    "resolution": 6.614596562526459,
+                    "scale": 25000
+                  },
+                  {
+                    "level": 4,
+                    "resolution": 2.6458386250105836,
+                    "scale": 10000
+                  },
+                  {
+                    "level": 5,
+                    "resolution": 1.3229193125052918,
+                    "scale": 5000
+                  },
+                  {
+                    "level": 6,
+                    "resolution": 0.6614596562526459,
+                    "scale": 2500
+                  },
+                  {
+                    "level": 7,
+                    "resolution": 0.26458386250105836,
+                    "scale": 1000
+                  },
+                  {
+                    "level": 8,
+                    "resolution": 0.13229193125052918,
+                    "scale": 500
+                  }
+                ]
+              },
+              "initialExtent": {
+                "xmin": 372656.8598992937,
+                "ymin": 4471947.838897939,
+                "xmax": 410029.33047756815,
+                "ymax": 4490667.147169889,
+                "spatialReference": {
+                  "wkid": 25830,
+                  "latestWkid": 25830
+                }
+              },
+              "fullExtent": {
+                "xmin": 424753.39999919204,
+                "ymin": 4462562.29999964,
+                "xmax": 456039.9542,
+                "ymax": 4499364.59999928,
+                "spatialReference": {
+                  "wkid": 25830,
+                  "latestWkid": 25830
+                }
+              },
+              "minScale": 250000,
+              "maxScale": 500,
+              "minLOD": 0,
+              "maxLOD": 8,
+              "units": "esriMeters",
+              "supportedImageFormatTypes": "PNG32,PNG24,PNG,JPG,DIB,TIFF,EMF,PS,PDF,GIF,SVG,SVGZ,BMP",
+              "documentInfo": {
+                "Title": "",
+                "Author": "",
+                "Comments": "",
+                "Subject": "",
+                "Category": "",
+                "AntialiasingMode": "None",
+                "TextAntialiasingMode": "Force",
+                "Keywords": ""
+              },
+              "capabilities": "Map,Query,Data",
+              "supportedQueryFormats": "JSON, geoJSON",
+              "exportTilesAllowed": false,
+              "supportsDatumTransformation": true,
+              "maxRecordCount": 1000,
+              "maxImageHeight": 4096,
+              "maxImageWidth": 4096,
+              "supportedExtensions": ""
+            }
+          }
+        ],
+        "spatialReference": {
+          "wkid": 25830,
+          "latestWkid": 25830
+        }
+      },
+      {
+        "thumbnailUrl": "${appPath}/configs/BasemapGallery/thumbnailUrl1620640804226.png",
+        "title": "Ortofoto ETRS89",
+        "layers": [
+          {
+            "id": "OrtofotoETRS89_453",
+            "layerType": "ArcGISTiledMapServiceLayer",
+            "url": "https://dgegisprepcc.emergencias.madrid.es/cisem/rest/services/OrtofotoETRS89/MapServer",
+            "visibility": true,
+            "opacity": 1,
+            "title": "OrtofotoETRS89",
+            "serviceInfoResponse": {
+              "currentVersion": 10.71,
+              "serviceDescription": "Ortofoto",
+              "mapName": "Layers",
+              "description": "",
+              "copyrightText": "",
+              "supportsDynamicLayers": true,
+              "layers": [
+                {
+                  "id": 0,
+                  "name": "SDEBOMBEROSETRS89.EXTENSION_ORTO",
+                  "parentLayerId": -1,
+                  "defaultVisibility": false,
+                  "subLayerIds": null,
+                  "minScale": 0,
+                  "maxScale": 0,
+                  "type": "Feature Layer",
+                  "geometryType": "esriGeometryPolygon"
+                },
+                {
+                  "id": 1,
+                  "name": "orto_cache",
+                  "parentLayerId": -1,
+                  "defaultVisibility": true,
+                  "subLayerIds": null,
+                  "minScale": 0,
+                  "maxScale": 0,
+                  "type": "Raster Layer"
+                }
+              ],
+              "tables": [],
+              "spatialReference": {
+                "wkid": 25830,
+                "latestWkid": 25830
+              },
+              "singleFusedMapCache": true,
+              "tileInfo": {
+                "rows": 256,
+                "cols": 256,
+                "dpi": 96,
+                "format": "MIXED",
+                "compressionQuality": 75,
+                "origin": {
+                  "x": -5120900,
+                  "y": 9998100
+                },
+                "spatialReference": {
+                  "wkid": 25830,
+                  "latestWkid": 25830
+                },
+                "lods": [
+                  {
+                    "level": 0,
+                    "resolution": 66.1459656252646,
+                    "scale": 250000
+                  },
+                  {
+                    "level": 1,
+                    "resolution": 26.458386250105836,
+                    "scale": 100000
+                  },
+                  {
+                    "level": 2,
+                    "resolution": 13.229193125052918,
+                    "scale": 50000
+                  },
+                  {
+                    "level": 3,
+                    "resolution": 6.614596562526459,
+                    "scale": 25000
+                  },
+                  {
+                    "level": 4,
+                    "resolution": 2.6458386250105836,
+                    "scale": 10000
+                  },
+                  {
+                    "level": 5,
+                    "resolution": 1.3229193125052918,
+                    "scale": 5000
+                  },
+                  {
+                    "level": 6,
+                    "resolution": 0.26458386250105836,
+                    "scale": 1000
+                  },
+                  {
+                    "level": 7,
+                    "resolution": 0.13229193125052918,
+                    "scale": 500
+                  }
+                ]
+              },
+              "initialExtent": {
+                "xmin": 375011.55831156427,
+                "ymin": 4504202.780637787,
+                "xmax": 430907.64173351775,
+                "ymax": 4535817.01032986,
+                "spatialReference": {
+                  "wkid": 25830,
+                  "latestWkid": 25830
+                }
+              },
+              "fullExtent": {
+                "xmin": 423472.4402,
+                "ymin": 4461099.8148,
+                "xmax": 457683.4363,
+                "ymax": 4500708.1698,
+                "spatialReference": {
+                  "wkid": 25830,
+                  "latestWkid": 25830
+                }
+              },
+              "minScale": 250000,
+              "maxScale": 500,
+              "minLOD": 0,
+              "maxLOD": 7,
+              "units": "esriMeters",
+              "supportedImageFormatTypes": "PNG32,PNG24,PNG,JPG,DIB,TIFF,EMF,PS,PDF,GIF,SVG,SVGZ,BMP",
+              "documentInfo": {
+                "Title": "",
+                "Author": "",
+                "Comments": "Ortofoto",
+                "Subject": "Ortofoto",
+                "Category": "",
+                "AntialiasingMode": "None",
+                "TextAntialiasingMode": "Force",
+                "Keywords": ""
+              },
+              "capabilities": "Map",
+              "supportedQueryFormats": "JSON, geoJSON",
+              "exportTilesAllowed": false,
+              "datumTransformations": [
+                {
+                  "geoTransforms": [
+                    {
+                      "wkid": 15932,
+                      "latestWkid": 15932,
+                      "transformForward": true,
+                      "name": "ED_1950_To_ETRS_1989_12_NTv2_Spain_v2"
+                    }
+                  ]
+                },
+                {
+                  "geoTransforms": [
+                    {
+                      "wkid": 15932,
+                      "latestWkid": 15932,
+                      "transformForward": false,
+                      "name": "ED_1950_To_ETRS_1989_12_NTv2_Spain_v2"
+                    }
+                  ]
+                }
+              ],
+              "supportsDatumTransformation": true,
+              "maxRecordCount": 1000,
+              "maxImageHeight": 4096,
+              "maxImageWidth": 4096,
+              "supportedExtensions": ""
+            }
+          }
+        ],
+        "spatialReference": {
+          "wkid": 25830,
+          "latestWkid": 25830
+        }
+      },
+      {
+        "thumbnailUrl": "${appPath}/configs/BasemapGallery/thumbnailUrl1620640804228.png",
+        "title": "Mapa Comercial ETRS89",
+        "layers": [
+          {
+            "id": "MapaComercialETRS89_9922",
+            "layerType": "ArcGISTiledMapServiceLayer",
+            "url": "https://dgegisprepcc.emergencias.madrid.es/cisem/rest/services/MapaComercialETRS89/MapServer",
+            "visibility": true,
+            "opacity": 1,
+            "title": "MapaComercialETRS89",
+            "serviceInfoResponse": {
+              "currentVersion": 10.71,
+              "serviceDescription": "",
+              "mapName": "Layers",
+              "description": "",
+              "copyrightText": "",
+              "supportsDynamicLayers": true,
+              "layers": [
+                {
+                  "id": 0,
+                  "name": "Madrid.img",
+                  "parentLayerId": -1,
+                  "defaultVisibility": true,
+                  "subLayerIds": null,
+                  "minScale": 0,
+                  "maxScale": 0,
+                  "type": "Raster Layer"
+                }
+              ],
+              "tables": [],
+              "spatialReference": {
+                "wkid": 25830,
+                "latestWkid": 25830
+              },
+              "singleFusedMapCache": true,
+              "tileInfo": {
+                "rows": 256,
+                "cols": 256,
+                "dpi": 96,
+                "format": "MIXED",
+                "compressionQuality": 75,
+                "origin": {
+                  "x": -5120900,
+                  "y": 9998100
+                },
+                "spatialReference": {
+                  "wkid": 25830,
+                  "latestWkid": 25830
+                },
+                "lods": [
+                  {
+                    "level": 0,
+                    "resolution": 66.1459656252646,
+                    "scale": 250000
+                  },
+                  {
+                    "level": 1,
+                    "resolution": 26.458386250105836,
+                    "scale": 100000
+                  },
+                  {
+                    "level": 2,
+                    "resolution": 13.229193125052918,
+                    "scale": 50000
+                  },
+                  {
+                    "level": 3,
+                    "resolution": 6.614596562526459,
+                    "scale": 25000
+                  },
+                  {
+                    "level": 4,
+                    "resolution": 2.6458386250105836,
+                    "scale": 10000
+                  },
+                  {
+                    "level": 5,
+                    "resolution": 1.3229193125052918,
+                    "scale": 5000
+                  },
+                  {
+                    "level": 6,
+                    "resolution": 0.6614596562526459,
+                    "scale": 2500
+                  },
+                  {
+                    "level": 7,
+                    "resolution": 0.26458386250105836,
+                    "scale": 1000
+                  },
+                  {
+                    "level": 8,
+                    "resolution": 0.13229193125052918,
+                    "scale": 500
+                  }
+                ]
+              },
+              "initialExtent": {
+                "xmin": 442872.6749849404,
+                "ymin": 4468998.777728776,
+                "xmax": 454831.8655699882,
+                "ymax": 4474988.956375801,
+                "spatialReference": {
+                  "wkid": 25830,
+                  "latestWkid": 25830
+                }
+              },
+              "fullExtent": {
+                "xmin": 428708.5088879749,
+                "ymin": 4462819.557124224,
+                "xmax": 455752.27982397494,
+                "ymax": 4487095.297303224,
+                "spatialReference": {
+                  "wkid": 25830,
+                  "latestWkid": 25830
+                }
+              },
+              "minScale": 250000,
+              "maxScale": 500,
+              "minLOD": 0,
+              "maxLOD": 8,
+              "units": "esriMeters",
+              "supportedImageFormatTypes": "PNG32,PNG24,PNG,JPG,DIB,TIFF,EMF,PS,PDF,GIF,SVG,SVGZ,BMP",
+              "documentInfo": {
+                "Title": "",
+                "Author": "",
+                "Comments": "",
+                "Subject": "",
+                "Category": "",
+                "AntialiasingMode": "None",
+                "TextAntialiasingMode": "Force",
+                "Keywords": ""
+              },
+              "capabilities": "Map,Query,Data",
+              "supportedQueryFormats": "JSON, geoJSON",
+              "exportTilesAllowed": false,
+              "supportsDatumTransformation": true,
+              "maxRecordCount": 1000,
+              "maxImageHeight": 4096,
+              "maxImageWidth": 4096,
+              "supportedExtensions": ""
+            }
+          }
+        ],
+        "spatialReference": {
+          "wkid": 25830,
+          "latestWkid": 25830
+        }
+      }
+    ]
+  }
+}

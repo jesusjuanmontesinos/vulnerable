@@ -1,0 +1,1359 @@
+{
+  "theme": {
+    "name": "FoldableTheme",
+    "styles": [
+      "yellow",
+      "default",
+      "black",
+      "blue",
+      "cyan",
+      "green",
+      "purple",
+      "red"
+    ],
+    "version": "2.19",
+    "sharedTheme": {
+      "isPortalSupport": true,
+      "useHeader": false,
+      "useLogo": false
+    },
+    "customStyles": {
+      "mainBackgroundColor": "#003ef6"
+    }
+  },
+  "portalUrl": "https://dgegispor.emergencias.madrid.es/geocisem/",
+  "appId": "",
+  "authorizedCrossOriginDomains": [],
+  "title": "Elementos vulnerables",
+  "subtitle": "",
+  "keepAppState": true,
+  "logo": "images/logo.png",
+  "geometryService": "https://dgegispor.emergencias.madrid.es/cisem/rest/services/Utilities/Geometry/GeometryServer",
+  "links": [],
+  "widgetOnScreen": {
+    "widgets": [
+      {
+        "uri": "themes/FoldableTheme/widgets/HeaderController/Widget",
+        "position": {
+          "left": 0,
+          "top": 0,
+          "right": 0,
+          "height": 40,
+          "relativeTo": "browser"
+        },
+        "version": "2.19",
+        "id": "themes_FoldableTheme_widgets_HeaderController_Widget_1",
+        "name": "HeaderController"
+      },
+      {
+        "uri": "widgets/Scalebar/Widget",
+        "position": {
+          "left": 7,
+          "bottom": 25,
+          "relativeTo": "map"
+        },
+        "version": "2.19",
+        "id": "widgets_Scalebar_Widget_11",
+        "name": "Scalebar",
+        "config": "configs/Scalebar/config_widgets_Scalebar_Widget_11.json"
+      },
+      {
+        "uri": "widgets/Search/Widget",
+        "position": {
+          "left": 55,
+          "top": 5,
+          "relativeTo": "map"
+        },
+        "version": "2.19",
+        "id": "widgets_Search_Widget_12",
+        "name": "Search",
+        "config": "configs/Search/config_widgets_Search_Widget_12.1.json"
+      },
+      {
+        "uri": "widgets/Coordinate/Widget",
+        "position": {
+          "left": 7,
+          "bottom": 5,
+          "relativeTo": "map"
+        },
+        "version": "2.19",
+        "id": "widgets_Coordinate_Widget_3",
+        "name": "Coordinate",
+        "config": "configs/Coordinate/config_widgets_Coordinate_Widget_3.json"
+      },
+      {
+        "position": {
+          "left": 55,
+          "top": 45,
+          "relativeTo": "map"
+        },
+        "placeholderIndex": 1,
+        "id": "_5"
+      },
+      {
+        "position": {
+          "left": 105,
+          "top": 45,
+          "relativeTo": "map"
+        },
+        "placeholderIndex": 2,
+        "id": "_6"
+      },
+      {
+        "position": {
+          "left": 155,
+          "top": 45,
+          "relativeTo": "map"
+        },
+        "placeholderIndex": 3,
+        "id": "_7"
+      },
+      {
+        "position": {
+          "left": 205,
+          "top": 45,
+          "relativeTo": "map"
+        },
+        "placeholderIndex": 4,
+        "id": "_8"
+      },
+      {
+        "position": {
+          "left": 255,
+          "top": 45,
+          "relativeTo": "map"
+        },
+        "placeholderIndex": 5,
+        "id": "_9"
+      },
+      {
+        "uri": "widgets/OverviewMap/Widget",
+        "position": {
+          "bottom": 0,
+          "right": 0,
+          "zIndex": 1,
+          "relativeTo": "map"
+        },
+        "version": "2.19",
+        "id": "widgets_OverviewMap_Widget_10",
+        "name": "OverviewMap"
+      },
+      {
+        "uri": "widgets/HomeButton/Widget",
+        "position": {
+          "left": 7,
+          "top": 75,
+          "relativeTo": "map"
+        },
+        "version": "2.19",
+        "id": "widgets_HomeButton_Widget_11",
+        "name": "HomeButton"
+      },
+      {
+        "uri": "widgets/MyLocation/Widget",
+        "position": {
+          "left": 7,
+          "top": 110,
+          "relativeTo": "map"
+        },
+        "version": "2.19",
+        "id": "widgets_MyLocation_Widget_12",
+        "name": "MyLocation"
+      },
+      {
+        "uri": "widgets/AttributeTable/Widget",
+        "position": {
+          "relativeTo": "browser"
+        },
+        "version": "2.19",
+        "id": "widgets_AttributeTable_Widget_13",
+        "name": "AttributeTable"
+      },
+      {
+        "uri": "widgets/Splash/Widget",
+        "visible": false,
+        "position": {
+          "relativeTo": "browser"
+        },
+        "version": "2.19",
+        "id": "widgets_Splash_Widget_14",
+        "name": "Splash"
+      },
+      {
+        "uri": "widgets/ZoomSlider/Widget",
+        "position": {
+          "top": 5,
+          "left": 7,
+          "relativeTo": "map"
+        },
+        "version": "2.19",
+        "id": "widgets_ZoomSlider_Widget_15",
+        "name": "ZoomSlider"
+      },
+      {
+        "uri": "widgets/ExtentNavigate/Widget",
+        "visible": false,
+        "position": {
+          "top": 190,
+          "left": 7,
+          "relativeTo": "map"
+        },
+        "id": "widgets_ExtentNavigate_Widget_16",
+        "name": "ExtentNavigate",
+        "version": "2.19"
+      },
+      {
+        "uri": "widgets/FullScreen/Widget",
+        "visible": false,
+        "position": {
+          "top": 150,
+          "left": 7,
+          "relativeTo": "map"
+        },
+        "version": "2.19",
+        "id": "widgets_FullScreen_Widget_17",
+        "name": "FullScreen"
+      }
+    ],
+    "panel": {
+      "uri": "jimu/OnScreenWidgetPanel",
+      "position": {
+        "relativeTo": "map"
+      }
+    }
+  },
+  "map": {
+    "3D": false,
+    "2D": true,
+    "position": {
+      "left": 0,
+      "top": 40,
+      "right": 0,
+      "bottom": 0
+    },
+    "itemId": "b41c367967dd409ab17b9f8e2357f044",
+    "mapOptions": {
+      "extent": {
+        "xmin": 422616.907736056,
+        "ymin": 4466927.360106981,
+        "xmax": 458335.7291736989,
+        "ymax": 4486427.190773309,
+        "spatialReference": {
+          "wkid": 25830,
+          "latestWkid": 25830
+        }
+      }
+    },
+    "id": "map",
+    "portalUrl": "https://dgegispor.emergencias.madrid.es/geocisem/",
+    "mapRefreshInterval": {
+      "useWebMapRefreshInterval": true
+    }
+  },
+  "widgetPool": {
+    "panel": {
+      "uri": "themes/FoldableTheme/panels/FoldablePanel/Panel",
+      "position": {
+        "top": 5,
+        "right": 5,
+        "bottom": 5,
+        "zIndex": 5,
+        "relativeTo": "map"
+      }
+    },
+    "widgets": [
+      {
+        "uri": "widgets/Legend/Widget",
+        "version": "2.19",
+        "id": "widgets_Legend_Widget_18",
+        "name": "Legend",
+        "index": 2,
+        "visible": false
+      },
+      {
+        "uri": "widgets/LayerList/Widget",
+        "version": "2.19",
+        "id": "widgets_LayerList_Widget_19",
+        "name": "LayerList",
+        "index": 3,
+        "visible": false
+      },
+      {
+        "name": "BasemapGallery",
+        "label": "Mapa Base",
+        "version": "2.19",
+        "uri": "widgets/BasemapGallery/Widget",
+        "config": "configs/BasemapGallery/config_widgets_BasemapGallery_Widget_2.1.json",
+        "index": 4,
+        "id": "widgets_BasemapGallery_Widget_2",
+        "visible": false
+      },
+      {
+        "name": "Direcciones",
+        "version": "2.16",
+        "IsController": false,
+        "uri": "widgets/Direcciones/Widget",
+        "config": "configs/Direcciones/config_widgets_Direcciones_Widget_4.1.json",
+        "index": 8,
+        "id": "widgets_Direcciones_Widget_4",
+        "visible": false
+      },
+      {
+        "name": "Riesgo",
+        "version": "2.16",
+        "IsController": false,
+        "uri": "widgets/Riesgo/Widget",
+        "config": "configs/Riesgo/config_widgets_Riesgo_Widget_10.1.json",
+        "index": 9,
+        "id": "widgets_Riesgo_Widget_10",
+        "visible": false
+      },
+      {
+        "name": "Documentación",
+        "version": "2.16",
+        "IsController": false,
+        "uri": "widgets/Documentacion/Widget",
+        "config": "configs/Documentación/config_widgets_documentacion_Widget_6.1.json",
+        "index": 10,
+        "id": "widgets_documentacion_Widget_6",
+        "visible": false
+      },
+      {
+        "name": "PlanDirector",
+        "version": "2.16",
+        "IsController": false,
+        "uri": "widgets/PlanDirector/Widget",
+        "config": "configs/PlanDirector/config_widgets_planDirector_Widget_8.1.json",
+        "index": 11,
+        "id": "widgets_planDirector_Widget_8",
+        "visible": false
+      },
+      {
+        "name": "Query",
+        "label": "Buscador",
+        "version": "2.19",
+        "uri": "widgets/Query/Widget",
+        "config": "configs/Query/config_widgets_Query_Widget_9.1.json",
+        "index": 12,
+        "id": "widgets_Query_Widget_9",
+        "IsController": false,
+        "visible": false
+      },
+      {
+        "name": "Measurement",
+        "version": "2.19",
+        "uri": "widgets/Measurement/Widget",
+        "config": "configs/Measurement/config_widgets_Measurement_Widget_7.json",
+        "index": 13,
+        "id": "widgets_Measurement_Widget_7",
+        "visible": false
+      },
+      {
+        "name": "Ayuda",
+        "version": "2.16",
+        "IsController": false,
+        "uri": "widgets/Ayuda/Widget",
+        "config": "configs/Ayuda/config_widgets_Ayuda_Widget_14.json",
+        "index": 15,
+        "id": "widgets_Ayuda_Widget_14",
+        "visible": false
+      },
+      {
+        "name": "Validacion",
+        "version": "2.16",
+        "IsController": false,
+        "uri": "widgets/Validacion/Widget",
+        "config": "configs/Validacion/config_widgets_Validacion_Widget_13.1.json",
+        "index": 17,
+        "openAtStart": true,
+        "id": "widgets_Validacion_Widget_13"
+      }
+    ],
+    "groups": []
+  },
+  "mobileLayout": {
+    "widgetOnScreen": {
+      "widgets": {
+        "widgets/Scalebar/Widget": {
+          "position": {
+            "left": 7,
+            "bottom": 40
+          },
+          "version": "1.4"
+        },
+        "widgets/Coordinate/Widget": {
+          "position": {
+            "left": 7,
+            "bottom": 17
+          },
+          "version": "1.4"
+        }
+      }
+    }
+  },
+  "loadingPage": {
+    "backgroundColor": "#040204",
+    "backgroundImage": {
+      "visible": false
+    },
+    "loadingGif": {
+      "visible": true,
+      "uri": "configs/loading/images/loading.gif",
+      "width": 146,
+      "height": 25
+    }
+  },
+  "wabVersion": "2.19",
+  "isTemplateApp": true,
+  "isWebTier": false,
+  "httpProxy": {
+    "useProxy": true,
+    "alwaysUseProxy": false,
+    "url": "",
+    "rules": []
+  },
+  "dataSource": {
+    "dataSources": {
+      "widget~widgets_Query_Widget_9~0": {
+        "id": "widget~widgets_Query_Widget_9~0",
+        "type": "Features",
+        "label": "Elemento Vulnerable Punto",
+        "dataSchema": {
+          "geometryType": "esriGeometryPoint",
+          "fields": [
+            {
+              "name": "OBJECTID",
+              "type": "esriFieldTypeOID",
+              "alias": "OBJECTID",
+              "domain": null,
+              "editable": false,
+              "nullable": false,
+              "defaultValue": null,
+              "modelName": "OBJECTID"
+            },
+            {
+              "name": "ID_ELEMENTOVULNERABLEP",
+              "type": "esriFieldTypeSmallInteger",
+              "alias": "ID_ELEMENTOVULNERABLEP",
+              "domain": null,
+              "editable": true,
+              "nullable": true,
+              "defaultValue": null,
+              "modelName": "ID_ELEMENTOVULNERABLEP"
+            },
+            {
+              "name": "ID_PLANDIRECTOR",
+              "type": "esriFieldTypeSmallInteger",
+              "alias": "ID_PLANDIRECTOR",
+              "domain": null,
+              "editable": true,
+              "nullable": true,
+              "defaultValue": null,
+              "modelName": "ID_PLANDIRECTOR"
+            },
+            {
+              "name": "NOMBRE",
+              "type": "esriFieldTypeString",
+              "alias": "NOMBRE",
+              "domain": null,
+              "editable": true,
+              "nullable": true,
+              "length": 250,
+              "defaultValue": null,
+              "modelName": "NOMBRE"
+            },
+            {
+              "name": "DESCRIPCION",
+              "type": "esriFieldTypeString",
+              "alias": "DESCRIPCION",
+              "domain": null,
+              "editable": true,
+              "nullable": true,
+              "length": 1073741822,
+              "defaultValue": null,
+              "modelName": "DESCRIPCION"
+            },
+            {
+              "name": "DIRTIPO",
+              "type": "esriFieldTypeString",
+              "alias": "DIRTIPO",
+              "domain": null,
+              "editable": true,
+              "nullable": true,
+              "length": 75,
+              "defaultValue": null,
+              "modelName": "DIRTIPO"
+            },
+            {
+              "name": "DIRNOMBRE",
+              "type": "esriFieldTypeString",
+              "alias": "DIRNOMBRE",
+              "domain": null,
+              "editable": true,
+              "nullable": true,
+              "length": 150,
+              "defaultValue": null,
+              "modelName": "DIRNOMBRE"
+            },
+            {
+              "name": "DIRNUMERO",
+              "type": "esriFieldTypeString",
+              "alias": "DIRNUMERO",
+              "domain": null,
+              "editable": true,
+              "nullable": true,
+              "length": 10,
+              "defaultValue": null,
+              "modelName": "DIRNUMERO"
+            },
+            {
+              "name": "DIRCALIFICADOR",
+              "type": "esriFieldTypeString",
+              "alias": "DIRCALIFICADOR",
+              "domain": null,
+              "editable": true,
+              "nullable": true,
+              "length": 5,
+              "defaultValue": null,
+              "modelName": "DIRCALIFICADOR"
+            },
+            {
+              "name": "DIRPOBLACION",
+              "type": "esriFieldTypeString",
+              "alias": "DIRPOBLACION",
+              "domain": null,
+              "editable": true,
+              "nullable": true,
+              "length": 100,
+              "defaultValue": null,
+              "modelName": "DIRPOBLACION"
+            },
+            {
+              "name": "DISTRITO",
+              "type": "esriFieldTypeSmallInteger",
+              "alias": "DISTRITO",
+              "domain": null,
+              "editable": true,
+              "nullable": false,
+              "defaultValue": null,
+              "modelName": "DISTRITO"
+            },
+            {
+              "name": "FECHAINI",
+              "type": "esriFieldTypeDate",
+              "alias": "FECHAINI",
+              "domain": null,
+              "editable": true,
+              "nullable": true,
+              "length": 8,
+              "defaultValue": null,
+              "modelName": "FECHAINI"
+            },
+            {
+              "name": "FECHAFIN",
+              "type": "esriFieldTypeDate",
+              "alias": "FECHAFIN",
+              "domain": null,
+              "editable": true,
+              "nullable": true,
+              "length": 8,
+              "defaultValue": null,
+              "modelName": "FECHAFIN"
+            },
+            {
+              "name": "UTMX",
+              "type": "esriFieldTypeDouble",
+              "alias": "UTMX",
+              "domain": null,
+              "editable": true,
+              "nullable": true,
+              "defaultValue": null,
+              "modelName": "UTMX"
+            },
+            {
+              "name": "UTMY",
+              "type": "esriFieldTypeDouble",
+              "alias": "UTMY",
+              "domain": null,
+              "editable": true,
+              "nullable": true,
+              "defaultValue": null,
+              "modelName": "UTMY"
+            },
+            {
+              "name": "AFORO",
+              "type": "esriFieldTypeInteger",
+              "alias": "AFORO",
+              "domain": null,
+              "editable": true,
+              "nullable": true,
+              "defaultValue": null,
+              "modelName": "AFORO"
+            },
+            {
+              "name": "TELCONTACTO",
+              "type": "esriFieldTypeString",
+              "alias": "TELCONTACTO",
+              "domain": null,
+              "editable": true,
+              "nullable": true,
+              "length": 20,
+              "defaultValue": null,
+              "modelName": "TELCONTACTO"
+            },
+            {
+              "name": "BORRADO",
+              "type": "esriFieldTypeSmallInteger",
+              "alias": "BORRADO",
+              "domain": null,
+              "editable": true,
+              "nullable": true,
+              "defaultValue": null,
+              "modelName": "BORRADO"
+            }
+          ],
+          "displayField": "NOMBRE",
+          "objectIdField": {
+            "name": "OBJECTID",
+            "type": "esriFieldTypeOID",
+            "alias": "OBJECTID",
+            "domain": null,
+            "editable": false,
+            "nullable": false,
+            "defaultValue": null,
+            "modelName": "OBJECTID"
+          },
+          "typeIdField": ""
+        }
+      },
+      "widget~widgets_Query_Widget_9~1": {
+        "id": "widget~widgets_Query_Widget_9~1",
+        "type": "Features",
+        "label": "Localizaciones",
+        "dataSchema": {
+          "geometryType": "esriGeometryPoint",
+          "fields": [
+            {
+              "name": "OBJECTID",
+              "type": "esriFieldTypeOID",
+              "alias": "OBJECTID",
+              "domain": null,
+              "editable": false,
+              "nullable": false,
+              "defaultValue": null,
+              "modelName": "OBJECTID"
+            },
+            {
+              "name": "ID_LOCALIZACION",
+              "type": "esriFieldTypeSmallInteger",
+              "alias": "ID_Localizacion",
+              "domain": null,
+              "editable": true,
+              "nullable": true,
+              "defaultValue": null,
+              "modelName": "ID_Localizacion"
+            },
+            {
+              "name": "ID_ELEMENTOVULNERABLEP",
+              "type": "esriFieldTypeSmallInteger",
+              "alias": "ID_ElementoVulnerableP",
+              "domain": null,
+              "editable": true,
+              "nullable": true,
+              "defaultValue": null,
+              "modelName": "ID_ElementoVulnerableP"
+            },
+            {
+              "name": "NOMBRE",
+              "type": "esriFieldTypeString",
+              "alias": "Nombre",
+              "domain": null,
+              "editable": true,
+              "nullable": true,
+              "length": 50,
+              "defaultValue": null,
+              "modelName": "Nombre"
+            },
+            {
+              "name": "DESCRIPCION",
+              "type": "esriFieldTypeString",
+              "alias": "Descripcion",
+              "domain": null,
+              "editable": true,
+              "nullable": true,
+              "length": 50,
+              "defaultValue": null,
+              "modelName": "Descripcion"
+            },
+            {
+              "name": "FECHABAJA",
+              "type": "esriFieldTypeString",
+              "alias": "FechaBaja",
+              "domain": null,
+              "editable": true,
+              "nullable": true,
+              "length": 50,
+              "defaultValue": null,
+              "modelName": "FechaBaja"
+            }
+          ],
+          "displayField": "NOMBRE",
+          "objectIdField": {
+            "name": "OBJECTID",
+            "type": "esriFieldTypeOID",
+            "alias": "OBJECTID",
+            "domain": null,
+            "editable": false,
+            "nullable": false,
+            "defaultValue": null,
+            "modelName": "OBJECTID"
+          },
+          "typeIdField": ""
+        }
+      },
+      "widget~widgets_Query_Widget_9~2": {
+        "id": "widget~widgets_Query_Widget_9~2",
+        "type": "Features",
+        "label": "Elemento Operacional",
+        "dataSchema": {
+          "geometryType": "esriGeometryPoint",
+          "fields": [
+            {
+              "name": "OBJECTID",
+              "type": "esriFieldTypeOID",
+              "alias": "OBJECTID",
+              "domain": null,
+              "editable": false,
+              "nullable": false,
+              "defaultValue": null,
+              "modelName": "OBJECTID"
+            },
+            {
+              "name": "ID_RECURSO",
+              "type": "esriFieldTypeInteger",
+              "alias": "ID_RECURSO",
+              "domain": null,
+              "editable": true,
+              "nullable": true,
+              "defaultValue": null,
+              "modelName": "ID_RECURSO"
+            },
+            {
+              "name": "NOMBRE",
+              "type": "esriFieldTypeString",
+              "alias": "NOMBRE",
+              "domain": null,
+              "editable": true,
+              "nullable": true,
+              "length": 250,
+              "defaultValue": null,
+              "modelName": "NOMBRE"
+            },
+            {
+              "name": "DIRTIPO",
+              "type": "esriFieldTypeString",
+              "alias": "DIRTIPO",
+              "domain": null,
+              "editable": true,
+              "nullable": true,
+              "length": 75,
+              "defaultValue": null,
+              "modelName": "DIRTIPO"
+            },
+            {
+              "name": "DIRNOMBRE",
+              "type": "esriFieldTypeString",
+              "alias": "DIRNOMBRE",
+              "domain": null,
+              "editable": true,
+              "nullable": true,
+              "length": 150,
+              "defaultValue": null,
+              "modelName": "DIRNOMBRE"
+            },
+            {
+              "name": "DIRNUMERO",
+              "type": "esriFieldTypeString",
+              "alias": "DIRNUMERO",
+              "domain": null,
+              "editable": true,
+              "nullable": true,
+              "length": 10,
+              "defaultValue": null,
+              "modelName": "DIRNUMERO"
+            },
+            {
+              "name": "DIRPOBLACI",
+              "type": "esriFieldTypeString",
+              "alias": "DIRPOBLACI",
+              "domain": null,
+              "editable": true,
+              "nullable": true,
+              "length": 100,
+              "defaultValue": null,
+              "modelName": "DIRPOBLACI"
+            },
+            {
+              "name": "ID_TIPOREC",
+              "type": "esriFieldTypeInteger",
+              "alias": "ID_TIPOREC",
+              "domain": null,
+              "editable": true,
+              "nullable": true,
+              "defaultValue": null,
+              "modelName": "ID_TIPOREC"
+            },
+            {
+              "name": "DISTRITO",
+              "type": "esriFieldTypeSmallInteger",
+              "alias": "DISTRITO",
+              "domain": null,
+              "editable": true,
+              "nullable": true,
+              "defaultValue": null,
+              "modelName": "DISTRITO"
+            },
+            {
+              "name": "OBSERVACIO",
+              "type": "esriFieldTypeString",
+              "alias": "OBSERVACIO",
+              "domain": null,
+              "editable": true,
+              "nullable": true,
+              "length": 254,
+              "defaultValue": null,
+              "modelName": "OBSERVACIO"
+            },
+            {
+              "name": "DOCUMENTO",
+              "type": "esriFieldTypeString",
+              "alias": "DOCUMENTO",
+              "domain": null,
+              "editable": true,
+              "nullable": true,
+              "length": 250,
+              "defaultValue": null,
+              "modelName": "DOCUMENTO"
+            },
+            {
+              "name": "UTMX",
+              "type": "esriFieldTypeDouble",
+              "alias": "UTMX",
+              "domain": null,
+              "editable": true,
+              "nullable": true,
+              "defaultValue": null,
+              "modelName": "UTMX"
+            },
+            {
+              "name": "UTMY",
+              "type": "esriFieldTypeDouble",
+              "alias": "UTMY",
+              "domain": null,
+              "editable": true,
+              "nullable": true,
+              "defaultValue": null,
+              "modelName": "UTMY"
+            },
+            {
+              "name": "DIRCALIFIC",
+              "type": "esriFieldTypeString",
+              "alias": "DIRCALIFIC",
+              "domain": null,
+              "editable": true,
+              "nullable": true,
+              "length": 5,
+              "defaultValue": null,
+              "modelName": "DIRCALIFIC"
+            }
+          ],
+          "displayField": "NOMBRE",
+          "objectIdField": {
+            "name": "OBJECTID",
+            "type": "esriFieldTypeOID",
+            "alias": "OBJECTID",
+            "domain": null,
+            "editable": false,
+            "nullable": false,
+            "defaultValue": null,
+            "modelName": "OBJECTID"
+          },
+          "typeIdField": ""
+        }
+      },
+      "widget~widgets_Query_Widget_9~3": {
+        "id": "widget~widgets_Query_Widget_9~3",
+        "type": "Features",
+        "label": "RIESGOS.VIEW_DOCUMENTO_ELEMENTOVULNERABLEP",
+        "dataSchema": {
+          "geometryType": "esriGeometryPoint",
+          "fields": [
+            {
+              "name": "OBJECTID",
+              "type": "esriFieldTypeOID",
+              "alias": "OBJECTID",
+              "domain": null
+            },
+            {
+              "name": "ID_ELEMENTOVULNERABLEP",
+              "type": "esriFieldTypeInteger",
+              "alias": "ID_ELEMENTOVULNERABLEP",
+              "domain": null
+            },
+            {
+              "name": "SHAPE",
+              "type": "esriFieldTypeGeometry",
+              "alias": "SHAPE",
+              "domain": null
+            },
+            {
+              "name": "ID_PLANDIRECTOR",
+              "type": "esriFieldTypeInteger",
+              "alias": "ID_PLANDIRECTOR",
+              "domain": null
+            },
+            {
+              "name": "NOMBRE",
+              "type": "esriFieldTypeString",
+              "alias": "NOMBRE",
+              "length": 250,
+              "domain": null
+            },
+            {
+              "name": "DESCRIPCION",
+              "type": "esriFieldTypeString",
+              "alias": "DESCRIPCION",
+              "length": 1073741822,
+              "domain": null
+            },
+            {
+              "name": "DIRTIPO",
+              "type": "esriFieldTypeString",
+              "alias": "DIRTIPO",
+              "length": 75,
+              "domain": null
+            },
+            {
+              "name": "DIRNOMBRE",
+              "type": "esriFieldTypeString",
+              "alias": "DIRNOMBRE",
+              "length": 150,
+              "domain": null
+            },
+            {
+              "name": "DIRNUMERO",
+              "type": "esriFieldTypeString",
+              "alias": "DIRNUMERO",
+              "length": 10,
+              "domain": null
+            },
+            {
+              "name": "DIRCALIFICADOR",
+              "type": "esriFieldTypeString",
+              "alias": "DIRCALIFICADOR",
+              "length": 5,
+              "domain": null
+            },
+            {
+              "name": "DIRPOBLACION",
+              "type": "esriFieldTypeString",
+              "alias": "DIRPOBLACION",
+              "length": 100,
+              "domain": null
+            },
+            {
+              "name": "DISTRITO",
+              "type": "esriFieldTypeSmallInteger",
+              "alias": "DISTRITO",
+              "domain": null
+            },
+            {
+              "name": "FECHAINI",
+              "type": "esriFieldTypeDate",
+              "alias": "FECHAINI",
+              "length": 8,
+              "domain": null
+            },
+            {
+              "name": "FECHAFIN",
+              "type": "esriFieldTypeDate",
+              "alias": "FECHAFIN",
+              "length": 8,
+              "domain": null
+            },
+            {
+              "name": "UTMX",
+              "type": "esriFieldTypeDouble",
+              "alias": "UTMX",
+              "domain": null
+            },
+            {
+              "name": "UTMY",
+              "type": "esriFieldTypeDouble",
+              "alias": "UTMY",
+              "domain": null
+            },
+            {
+              "name": "AFORO",
+              "type": "esriFieldTypeInteger",
+              "alias": "AFORO",
+              "domain": null
+            },
+            {
+              "name": "TELCONTACTO",
+              "type": "esriFieldTypeString",
+              "alias": "TELCONTACTO",
+              "length": 20,
+              "domain": null
+            },
+            {
+              "name": "ID_TIPODOCUMENTO",
+              "type": "esriFieldTypeInteger",
+              "alias": "ID_TIPODOCUMENTO",
+              "domain": null
+            },
+            {
+              "name": "NOMBREDOC",
+              "type": "esriFieldTypeString",
+              "alias": "NOMBREDOC",
+              "length": 250,
+              "domain": null
+            },
+            {
+              "name": "DESCRIPCIONDOC",
+              "type": "esriFieldTypeString",
+              "alias": "DESCRIPCIONDOC",
+              "length": 500,
+              "domain": null
+            },
+            {
+              "name": "ENLACE",
+              "type": "esriFieldTypeString",
+              "alias": "ENLACE",
+              "length": 250,
+              "domain": null
+            },
+            {
+              "name": "NOMBRETIPO",
+              "type": "esriFieldTypeString",
+              "alias": "NOMBRETIPO",
+              "length": 50,
+              "domain": null
+            }
+          ],
+          "displayField": "NOMBRE",
+          "objectIdField": {
+            "name": "OBJECTID",
+            "type": "esriFieldTypeOID",
+            "alias": "OBJECTID",
+            "domain": null
+          },
+          "typeIdField": null
+        }
+      },
+      "widget~widgets_Query_Widget_9~4": {
+        "id": "widget~widgets_Query_Widget_9~4",
+        "type": "Features",
+        "label": "Tipología",
+        "dataSchema": {
+          "geometryType": "esriGeometryPoint",
+          "fields": [
+            {
+              "name": "OBJECTID",
+              "type": "esriFieldTypeOID",
+              "alias": "OBJECTID",
+              "domain": null
+            },
+            {
+              "name": "SHAPE",
+              "type": "esriFieldTypeGeometry",
+              "alias": "SHAPE",
+              "domain": null
+            },
+            {
+              "name": "ID_ELEMENTOVULNERABLEP",
+              "type": "esriFieldTypeInteger",
+              "alias": "ID_ELEMENTOVULNERABLEP",
+              "domain": null
+            },
+            {
+              "name": "ID_PLANDIRECTOR",
+              "type": "esriFieldTypeInteger",
+              "alias": "ID_PLANDIRECTOR",
+              "domain": null
+            },
+            {
+              "name": "NOMBRE",
+              "type": "esriFieldTypeString",
+              "alias": "NOMBRE",
+              "length": 250,
+              "domain": null
+            },
+            {
+              "name": "DESCRIPCION",
+              "type": "esriFieldTypeString",
+              "alias": "DESCRIPCION",
+              "length": 1073741822,
+              "domain": null
+            },
+            {
+              "name": "DIRTIPO",
+              "type": "esriFieldTypeString",
+              "alias": "DIRTIPO",
+              "length": 75,
+              "domain": null
+            },
+            {
+              "name": "DIRNOMBRE",
+              "type": "esriFieldTypeString",
+              "alias": "DIRNOMBRE",
+              "length": 150,
+              "domain": null
+            },
+            {
+              "name": "DIRNUMERO",
+              "type": "esriFieldTypeString",
+              "alias": "DIRNUMERO",
+              "length": 10,
+              "domain": null
+            },
+            {
+              "name": "DIRCALIFICADOR",
+              "type": "esriFieldTypeString",
+              "alias": "DIRCALIFICADOR",
+              "length": 5,
+              "domain": null
+            },
+            {
+              "name": "DIRPOBLACION",
+              "type": "esriFieldTypeString",
+              "alias": "DIRPOBLACION",
+              "length": 100,
+              "domain": null
+            },
+            {
+              "name": "DISTRITO",
+              "type": "esriFieldTypeSmallInteger",
+              "alias": "DISTRITO",
+              "domain": null
+            },
+            {
+              "name": "FECHAINI",
+              "type": "esriFieldTypeDate",
+              "alias": "FECHAINI",
+              "length": 8,
+              "domain": null
+            },
+            {
+              "name": "FECHAFIN",
+              "type": "esriFieldTypeDate",
+              "alias": "FECHAFIN",
+              "length": 8,
+              "domain": null
+            },
+            {
+              "name": "UTMX",
+              "type": "esriFieldTypeDouble",
+              "alias": "UTMX",
+              "domain": null
+            },
+            {
+              "name": "UTMY",
+              "type": "esriFieldTypeDouble",
+              "alias": "UTMY",
+              "domain": null
+            },
+            {
+              "name": "AFORO",
+              "type": "esriFieldTypeInteger",
+              "alias": "AFORO",
+              "domain": null
+            },
+            {
+              "name": "TELCONTACTO",
+              "type": "esriFieldTypeString",
+              "alias": "TELCONTACTO",
+              "length": 20,
+              "domain": null
+            },
+            {
+              "name": "CLASE",
+              "type": "esriFieldTypeString",
+              "alias": "CLASE",
+              "length": 50,
+              "domain": null
+            },
+            {
+              "name": "CATEGORIA",
+              "type": "esriFieldTypeString",
+              "alias": "CATEGORIA",
+              "length": 50,
+              "domain": null
+            },
+            {
+              "name": "SUBCATEGORIA",
+              "type": "esriFieldTypeString",
+              "alias": "SUBCATEGORIA",
+              "length": 100,
+              "domain": null
+            }
+          ],
+          "displayField": "NOMBRE",
+          "objectIdField": {
+            "name": "OBJECTID",
+            "type": "esriFieldTypeOID",
+            "alias": "OBJECTID",
+            "domain": null
+          },
+          "typeIdField": null
+        }
+      },
+      "widget~widgets_Query_Widget_9~5": {
+        "id": "widget~widgets_Query_Widget_9~5",
+        "type": "Features",
+        "label": "Factores",
+        "dataSchema": {
+          "geometryType": "esriGeometryPoint",
+          "fields": [
+            {
+              "name": "OBJECTID",
+              "type": "esriFieldTypeOID",
+              "alias": "OBJECTID",
+              "domain": null
+            },
+            {
+              "name": "SHAPE",
+              "type": "esriFieldTypeGeometry",
+              "alias": "SHAPE",
+              "domain": null
+            },
+            {
+              "name": "ID_ELEMENTOVULNERABLEP",
+              "type": "esriFieldTypeInteger",
+              "alias": "ID ELEMENTOVULNERABLE PUNTO",
+              "domain": null
+            },
+            {
+              "name": "ID_PLANDIRECTOR",
+              "type": "esriFieldTypeInteger",
+              "alias": "ID PLANDIRECTOR",
+              "domain": null
+            },
+            {
+              "name": "NOMBRE",
+              "type": "esriFieldTypeString",
+              "alias": "NOMBRE",
+              "length": 250,
+              "domain": null
+            },
+            {
+              "name": "DESCRIPCION",
+              "type": "esriFieldTypeString",
+              "alias": "DESCRIPCION",
+              "length": 1073741822,
+              "domain": null
+            },
+            {
+              "name": "DIRTIPO",
+              "type": "esriFieldTypeString",
+              "alias": "TIPO VÍA",
+              "length": 75,
+              "domain": null
+            },
+            {
+              "name": "DIRNOMBRE",
+              "type": "esriFieldTypeString",
+              "alias": "NOMBRE VÍA",
+              "length": 150,
+              "domain": null
+            },
+            {
+              "name": "DIRNUMERO",
+              "type": "esriFieldTypeString",
+              "alias": "NUMERO VÍA",
+              "length": 10,
+              "domain": null
+            },
+            {
+              "name": "DIRCALIFICADOR",
+              "type": "esriFieldTypeString",
+              "alias": "CALIFICADOR",
+              "length": 5,
+              "domain": null
+            },
+            {
+              "name": "DIRPOBLACION",
+              "type": "esriFieldTypeString",
+              "alias": "POBLACION",
+              "length": 100,
+              "domain": null
+            },
+            {
+              "name": "DISTRITO",
+              "type": "esriFieldTypeSmallInteger",
+              "alias": "DISTRITO",
+              "domain": null
+            },
+            {
+              "name": "FECHAINI",
+              "type": "esriFieldTypeDate",
+              "alias": "FECHA INI",
+              "length": 8,
+              "domain": null
+            },
+            {
+              "name": "FECHAFIN",
+              "type": "esriFieldTypeDate",
+              "alias": "FECHA FIN",
+              "length": 8,
+              "domain": null
+            },
+            {
+              "name": "UTMX",
+              "type": "esriFieldTypeDouble",
+              "alias": "UTMX",
+              "domain": null
+            },
+            {
+              "name": "UTMY",
+              "type": "esriFieldTypeDouble",
+              "alias": "UTMY",
+              "domain": null
+            },
+            {
+              "name": "AFORO",
+              "type": "esriFieldTypeInteger",
+              "alias": "AFORO",
+              "domain": null
+            },
+            {
+              "name": "TELCONTACTO",
+              "type": "esriFieldTypeString",
+              "alias": "TELCONTACTO",
+              "length": 20,
+              "domain": null
+            },
+            {
+              "name": "TIPOFACTOR",
+              "type": "esriFieldTypeString",
+              "alias": "TIPOFACTOR",
+              "length": 50,
+              "domain": null
+            }
+          ],
+          "displayField": "NOMBRE",
+          "objectIdField": {
+            "name": "OBJECTID",
+            "type": "esriFieldTypeOID",
+            "alias": "OBJECTID",
+            "domain": null
+          },
+          "typeIdField": null
+        }
+      }
+    },
+    "settings": {}
+  },
+  "logoAlt": "",
+  "logoLink": ""
+}

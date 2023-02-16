@@ -1,0 +1,108 @@
+{
+  "allPlaceholder": "Buscar",
+  "showInfoWindowOnSelect": true,
+  "sources": [
+    {
+      "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer",
+      "name": "ArcGIS World Geocoding Service",
+      "singleLineFieldName": "SingleLine",
+      "placeholder": "Find address or place",
+      "countryCode": "",
+      "panToScale": false,
+      "zoomScale": null,
+      "maxSuggestions": 6,
+      "maxResults": 6,
+      "searchInCurrentMapExtent": false,
+      "enableLocalSearch": true,
+      "localSearchMinScale": 300000,
+      "localSearchDistance": 50000,
+      "radiusUnit": "meter",
+      "type": "locator"
+    },
+    {
+      "url": "https://dgegispor.emergencias.madrid.es/cisem/rest/services/Riesgos/Riesgos/FeatureServer/2",
+      "name": "Elemento Vulnerable Punto",
+      "placeholder": "Buscar nombre",
+      "searchFields": [
+        "NOMBRE"
+      ],
+      "displayField": "NOMBRE",
+      "exactMatch": false,
+      "searchInCurrentMapExtent": false,
+      "panToScale": false,
+      "zoomScale": null,
+      "maxSuggestions": 6,
+      "maxResults": 6,
+      "type": "query"
+    },
+    {
+      "url": "https://dgegispor.emergencias.madrid.es/cisem/rest/services/Riesgos/Riesgos/FeatureServer/1",
+      "name": "Localización",
+      "placeholder": "Buscar nombre",
+      "searchFields": [
+        "Nombre"
+      ],
+      "displayField": "Nombre",
+      "exactMatch": false,
+      "searchInCurrentMapExtent": false,
+      "panToScale": false,
+      "zoomScale": null,
+      "maxSuggestions": 6,
+      "maxResults": 6,
+      "type": "query"
+    },
+    {
+      "layerId": "Riesgos_2935",
+      "url": "https://dgegispor.emergencias.madrid.es/cisem/rest/services/Riesgos/Riesgos/FeatureServer/3",
+      "name": "Elemento Operacional",
+      "placeholder": "Buscar nombre",
+      "searchFields": [
+        "NOMBRE"
+      ],
+      "displayField": "NOMBRE",
+      "exactMatch": false,
+      "searchInCurrentMapExtent": false,
+      "panToScale": false,
+      "zoomScale": null,
+      "maxSuggestions": 6,
+      "maxResults": 6,
+      "type": "query"
+    },
+    {
+      "layerId": null,
+      "url": "https://dgegispor.emergencias.madrid.es/cisem/rest/services/Riesgos/vistaTipologiaElementoVulnerabilidad/MapServer/0",
+      "name": "Tipología",
+      "placeholder": "Buscar clase o categoria o subcategoria",
+      "searchFields": [
+        "CLASE",
+        "CATEGORIA",
+        "SUBCATEGORIA"
+      ],
+      "displayField": "CLASE",
+      "exactMatch": false,
+      "searchInCurrentMapExtent": false,
+      "panToScale": false,
+      "zoomScale": null,
+      "maxSuggestions": 6,
+      "maxResults": 6,
+      "type": "query"
+    },
+    {
+      "layerId": null,
+      "url": "https://dgegispor.emergencias.madrid.es/cisem/rest/services/Riesgos/vistaFactorElementoVulnerabilidad/MapServer/0",
+      "name": "Factores",
+      "placeholder": "Buscar tipofactor",
+      "searchFields": [
+        "TIPOFACTOR"
+      ],
+      "displayField": "TIPOFACTOR",
+      "exactMatch": false,
+      "searchInCurrentMapExtent": false,
+      "panToScale": false,
+      "zoomScale": null,
+      "maxSuggestions": 6,
+      "maxResults": 6,
+      "type": "query"
+    }
+  ]
+}
