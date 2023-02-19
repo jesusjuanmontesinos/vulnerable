@@ -1,8 +1,8 @@
 {
-  "urlSLocalizacionPKCalle30": "https://dgegisprepcc.emergencias.madrid.es/cisem/rest/services/Calle30ETRS89/MapServer",
+  "urlSLocalizacionPKCalle30": "https://VISOR_ARCGIS/rest/services/Calle30ETRS89/MapServer",
   "capaCalle30": 0,
-  "urlWSAccesoDireccion": "https://titan.emergencias.madrid.es/LocalizacionWS/servicioLocalizacion",
-  "urlGeometry": "https://dgegisprepcc.emergencias.madrid.es/cisem/rest/services/Utilities/Geometry/GeometryServer",
+  "urlWSAccesoDireccion": "https://APP_INTERNA/LocalizacionWS/servicioLocalizacion",
+  "urlGeometry": "https://VISOR_ARCGIS/rest/services/Utilities/Geometry/GeometryServer",
   "urlProxy": "/proxy/proxy.jsp?",
   "campoBusquedaCalle30": "NOMBRE",
   "funcionBuscar": "obtenerDireccion",

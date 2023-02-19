@@ -9,7 +9,7 @@
 	"TagNameValidarUsuario":"recuperarValidacionReturn",
 	"idAplicacion":"62",	
   "configGlobal":{
-		"urlWSGIS":"https://titan.emergencias.madrid.es/ServicioWebGIS/services/ServicioWebGIS",
+		"urlWSGIS":"https://APP_INTERNA/ServicioWebGIS/services/ServicioWebGIS",
 		"proxy":"/proxy/proxy.jsp?"
 	},
 "configLevels": {

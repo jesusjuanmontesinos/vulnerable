@@ -1,6 +1,6 @@
 {
-  "urlWSRiesgo": "https://dgegissrv.emergencias.madrid.es:8443/ServicioWebRiesgos/services/ServicioWebRiesgos",
-  "urlGeometry": "https://dgegispor.emergencias.madrid.es/cisem/rest/services/Utilities/Geometry/GeometryServer",
+  "urlWSRiesgo": "https://APP_MODULO:8443/ServicioWebRiesgos/services/ServicioWebRiesgos",
+  "urlGeometry": "https://VISOR_ARCGIS/rest/services/Utilities/Geometry/GeometryServer",
   "urlProxy": "/proxy/proxy.jsp?",
   "funcionGetTiposDocumento": "getTiposDocumento",
   "tagNameGetTiposDocumento": "getTiposDocumentoResponse",
@@ -18,16 +18,16 @@
       "TIPADO": "TIPADO",
       "TIPOLOGIA": "TIPOLOGIA"
     },
-    "seviceUrlElementoVulnerableA":"https://dgegispor.emergencias.madrid.es/cisem/rest/services/Riesgos/Riesgos/FeatureServer/0/",
-    "seviceUrlLocalizaciones":"https://dgegispor.emergencias.madrid.es/cisem/rest/services/Riesgos/Riesgos/FeatureServer/1/",
-    "seviceUrlElementoVulnerableP":"https://dgegispor.emergencias.madrid.es/cisem/rest/services/Riesgos/Riesgos/FeatureServer/2",
-    "seviceUrlVulnerabilidad":"https://dgegispor.emergencias.madrid.es/cisem/rest/services/Riesgos/Riesgos/FeatureServer/4/",
-    "seviceUrlDocumentos":"https://dgegispor.emergencias.madrid.es/cisem/rest/services/Riesgos/Riesgos/FeatureServer/5/",
-    "seviceUrlDocumentosPlan":"https://dgegispor.emergencias.madrid.es/cisem/rest/services/Riesgos/Riesgos/FeatureServer/6/",
-    "seviceUrlDocumentosVulnerable":"https://dgegispor.emergencias.madrid.es/cisem/rest/services/Riesgos/Riesgos/FeatureServer/7/",
-    "seviceUrlDocumentosLozalizacion":"https://dgegispor.emergencias.madrid.es/cisem/rest/services/Riesgos/Riesgos/FeatureServer/8/",
-    "seviceUrlPlanDirector":"https://dgegispor.emergencias.madrid.es/cisem/rest/services/Riesgos/Riesgos/FeatureServer/9/",
-    "seviceUrlFactorVulneravilidad":"https://dgegispor.emergencias.madrid.es/cisem/rest/services/Riesgos/Riesgos/FeatureServer/10/",
-    "seviceUrlTipado":"https://dgegispor.emergencias.madrid.es/cisem/rest/services/Riesgos/Riesgos/FeatureServer/11/"
+    "seviceUrlElementoVulnerableA":"https://VISOR_ARCGIS/rest/services/Riesgos/Riesgos/FeatureServer/0/",
+    "seviceUrlLocalizaciones":"https://VISOR_ARCGIS/rest/services/Riesgos/Riesgos/FeatureServer/1/",
+    "seviceUrlElementoVulnerableP":"https://VISOR_ARCGIS/rest/services/Riesgos/Riesgos/FeatureServer/2",
+    "seviceUrlVulnerabilidad":"https://VISOR_ARCGIS/rest/services/Riesgos/Riesgos/FeatureServer/4/",
+    "seviceUrlDocumentos":"https://VISOR_ARCGIS/rest/services/Riesgos/Riesgos/FeatureServer/5/",
+    "seviceUrlDocumentosPlan":"https://VISOR_ARCGIS/rest/services/Riesgos/Riesgos/FeatureServer/6/",
+    "seviceUrlDocumentosVulnerable":"https://VISOR_ARCGIS/rest/services/Riesgos/Riesgos/FeatureServer/7/",
+    "seviceUrlDocumentosLozalizacion":"https://VISOR_ARCGIS/rest/services/Riesgos/Riesgos/FeatureServer/8/",
+    "seviceUrlPlanDirector":"https://VISOR_ARCGIS/rest/services/Riesgos/Riesgos/FeatureServer/9/",
+    "seviceUrlFactorVulneravilidad":"https://VISOR_ARCGIS/rest/services/Riesgos/Riesgos/FeatureServer/10/",
+    "seviceUrlTipado":"https://VISOR_ARCGIS/rest/services/Riesgos/Riesgos/FeatureServer/11/"
   }
 }

@@ -21,14 +21,14 @@
       "mainBackgroundColor": "#003ef6"
     }
   },
-  "portalUrl": "https://dgegispor.emergencias.madrid.es/geocisem/",
+  "portalUrl": "https://PORTAL_ARCGIS",
   "appId": "",
   "authorizedCrossOriginDomains": [],
   "title": "Elementos vulnerables",
   "subtitle": "",
   "keepAppState": true,
   "logo": "images/logo.png",
-  "geometryService": "https://dgegispor.emergencias.madrid.es/cisem/rest/services/Utilities/Geometry/GeometryServer",
+  "geometryService": "https://PORTAL_ARCGIS/rest/services/Utilities/Geometry/GeometryServer",
   "links": [],
   "widgetOnScreen": {
     "widgets": [
@@ -245,7 +245,7 @@
       }
     },
     "id": "map",
-    "portalUrl": "https://dgegispor.emergencias.madrid.es/geocisem/",
+    "portalUrl": "https://VISOR_ARCGIS/",
     "mapRefreshInterval": {
       "useWebMapRefreshInterval": true
     }

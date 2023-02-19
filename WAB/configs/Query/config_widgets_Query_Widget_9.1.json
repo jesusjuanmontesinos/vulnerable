@@ -7,7 +7,7 @@
   "spatialFilterLabel": "Spatial filters",
   "queries": [
     {
-      "url": "https://dgegispor.emergencias.madrid.es/cisem/rest/services/Riesgos/Riesgos/FeatureServer/2",
+      "url": "https://VISOR_ARCGIS/rest/services/Riesgos/Riesgos/FeatureServer/2",
       "name": "Elemento Vulnerable",
       "icon": {
         "color": [
@@ -109,7 +109,7 @@
       "customResultName": false
     },
     {
-      "url": "https://dgegispor.emergencias.madrid.es/cisem/rest/services/Riesgos/Riesgos/FeatureServer/1",
+      "url": "https://VISOR_ARCGIS/rest/services/Riesgos/Riesgos/FeatureServer/1",
       "name": "Localizaciones",
       "icon": {
         "color": [
@@ -211,7 +211,7 @@
       "customResultName": false
     },
     {
-      "url": "https://dgegispor.emergencias.madrid.es/cisem/rest/services/Riesgos/Riesgos/FeatureServer/3",
+      "url": "https://VISOR_ARCGIS/rest/services/Riesgos/Riesgos/FeatureServer/3",
       "name": "Elemento Operacional",
       "icon": {
         "color": [
@@ -337,7 +337,7 @@
       "customResultName": false
     },
     {
-      "url": "https://dgegispor.emergencias.madrid.es/cisem/rest/services/Riesgos/vistaDocumentoElementoVulnerabilidad/MapServer/1",
+      "url": "https://VISOR_ARCGIS/rest/services/Riesgos/vistaDocumentoElementoVulnerabilidad/MapServer/1",
       "name": "Documentos",
       "icon": {
         "color": [
@@ -447,7 +447,7 @@
       "customResultName": false
     },
     {
-      "url": "https://dgegispor.emergencias.madrid.es/cisem/rest/services/Riesgos/vistaTipologiaElementoVulnerabilidad/MapServer/0",
+      "url": "https://VISOR_ARCGIS/rest/services/Riesgos/vistaTipologiaElementoVulnerabilidad/MapServer/0",
       "name": "Tipología",
       "icon": {
         "color": [
@@ -816,7 +816,7 @@
       "customResultName": false
     },
     {
-      "url": "https://dgegispor.emergencias.madrid.es/cisem/rest/services/Riesgos/vistaFactorElementoVulnerabilidad/MapServer/0",
+      "url": "https://VISOR_ARCGIS/rest/services/Riesgos/vistaFactorElementoVulnerabilidad/MapServer/0",
       "name": "Factores",
       "icon": {
         "color": [

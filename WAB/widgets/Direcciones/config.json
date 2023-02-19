@@ -1,6 +1,6 @@
 {
-	"urlWSAccesoDireccion": "https://titan.emergencias.madrid.es/LocalizacionWS/servicioLocalizacion",
-	"urlGeometry":"https://gisact.emergencias.madrid.es/arcgis/rest/services/Utilities/Geometry/GeometryServer",
+	"urlWSAccesoDireccion": "https://APP_INTERNA/LocalizacionWS/servicioLocalizacion",
+	"urlGeometry":"https://PORTAL_DESA/arcgis/rest/services/Utilities/Geometry/GeometryServer",
 	"urlProxy":"/proxy/proxy.jsp?",
 	"campoBusquedaCalle30":"NOMBRE",
 	"funcionBuscar": "obtenerDireccion",

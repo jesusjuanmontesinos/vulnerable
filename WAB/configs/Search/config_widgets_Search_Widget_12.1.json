@@ -20,7 +20,7 @@
       "type": "locator"
     },
     {
-      "url": "https://dgegispor.emergencias.madrid.es/cisem/rest/services/Riesgos/Riesgos/FeatureServer/2",
+      "url": "https://VISOR_ARCGIS/rest/services/Riesgos/Riesgos/FeatureServer/2",
       "name": "Elemento Vulnerable Punto",
       "placeholder": "Buscar nombre",
       "searchFields": [
@@ -36,7 +36,7 @@
       "type": "query"
     },
     {
-      "url": "https://dgegispor.emergencias.madrid.es/cisem/rest/services/Riesgos/Riesgos/FeatureServer/1",
+      "url": "https://VISOR_ARCGIS/rest/services/Riesgos/Riesgos/FeatureServer/1",
       "name": "Localización",
       "placeholder": "Buscar nombre",
       "searchFields": [
@@ -53,7 +53,7 @@
     },
     {
       "layerId": "Riesgos_2935",
-      "url": "https://dgegispor.emergencias.madrid.es/cisem/rest/services/Riesgos/Riesgos/FeatureServer/3",
+      "url": "https://VISOR_ARCGIS/rest/services/Riesgos/Riesgos/FeatureServer/3",
       "name": "Elemento Operacional",
       "placeholder": "Buscar nombre",
       "searchFields": [
@@ -70,7 +70,7 @@
     },
     {
       "layerId": null,
-      "url": "https://dgegispor.emergencias.madrid.es/cisem/rest/services/Riesgos/vistaTipologiaElementoVulnerabilidad/MapServer/0",
+      "url": "https://VISOR_ARCGIS/rest/services/Riesgos/vistaTipologiaElementoVulnerabilidad/MapServer/0",
       "name": "Tipología",
       "placeholder": "Buscar clase o categoria o subcategoria",
       "searchFields": [
@@ -89,7 +89,7 @@
     },
     {
       "layerId": null,
-      "url": "https://dgegispor.emergencias.madrid.es/cisem/rest/services/Riesgos/vistaFactorElementoVulnerabilidad/MapServer/0",
+      "url": "https://VISOR_ARCGIS/rest/services/Riesgos/vistaFactorElementoVulnerabilidad/MapServer/0",
       "name": "Factores",
       "placeholder": "Buscar tipofactor",
       "searchFields": [

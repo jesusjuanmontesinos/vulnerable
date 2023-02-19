@@ -9,7 +9,7 @@
           {
             "id": "MapaBaseETRS89_6349",
             "layerType": "ArcGISTiledMapServiceLayer",
-            "url": "https://dgegisprepcc.emergencias.madrid.es/cisem/rest/services/MapaBaseETRS89/MapServer",
+            "url": "https://VISOR_ARCGIS/rest/services/MapaBaseETRS89/MapServer",
             "visibility": true,
             "opacity": 1,
             "title": "MapaBaseETRS89",
@@ -709,7 +709,7 @@
           {
             "id": "OrtofotoETRS89_453",
             "layerType": "ArcGISTiledMapServiceLayer",
-            "url": "https://dgegisprepcc.emergencias.madrid.es/cisem/rest/services/OrtofotoETRS89/MapServer",
+            "url": "https://VISOR_ARCGIS/rest/services/OrtofotoETRS89/MapServer",
             "visibility": true,
             "opacity": 1,
             "title": "OrtofotoETRS89",
@@ -887,7 +887,7 @@
           {
             "id": "MapaComercialETRS89_9922",
             "layerType": "ArcGISTiledMapServiceLayer",
-            "url": "https://dgegisprepcc.emergencias.madrid.es/cisem/rest/services/MapaComercialETRS89/MapServer",
+            "url": "https://VISOR_ARCGIS/rest/services/MapaComercialETRS89/MapServer",
             "visibility": true,
             "opacity": 1,
             "title": "MapaComercialETRS89",
